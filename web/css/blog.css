@@ -1,0 +1,38 @@
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+ul {
+  margin-bottom: 10px;
+}
+h1, h2 {
+  padding-top: 30px;
+}
+h3, h4, h5, h6 {
+  font-weight: bold;
+  padding-top: 10px;
+}
+hr {
+  padding-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.content {
+  margin-top: 30px;
+}
+ul, li {
+  font-size: 13px;
+}
+.content ul {
+  font-size: 16px;
+}
+.content li {
+  font-size: 16px;
+}

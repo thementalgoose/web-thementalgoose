@@ -1,0 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+body {
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363636;
+  background: #ededed;
+  padding-bottom: 10px;
+}
+p, ul, li {
+  font-size: 14px;
+}
+pre, code {
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 14px;
+  tab-size: 4; 
+}
+ul {
+  margin: 0px;
+}
+
+.content {
+  margin-top: 100px;
+  background: #fff;
+}
+
+#photo-header{
+  margin-top: -75px;
+}
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #ededed;
+  display: inline-block;
+}
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+hr {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+.mini {
+  height: 10px;
+  margin-bottom: 5px;
+}
+
+.description{
+  display: inline-block;
+  background: #eee;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  position: relative;
+  padding: 0px
+  border-bottom: 1px solid #ddd;
+}
+.description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #eee;
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.education {
+  list-style: none;
+}
+.education li .row {
+  margin-right: 5px;
+}
+.year-indicator {
+  padding-left: 0px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+} 
+.progress {
+  margin-bottom: 10px;
+  border-radius: 0px;
+}
+
+.custom-progress {
+  height: 30px;
+  background: #2194DB;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+
+@media (min-width: 990px) {
+  #contact {
+    width: 90%;
+    margin-right: 10px;
+  }
+}
+#contact .row {
+  background-color: #ededed;
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-right: 0px;
+}
+#contact h5 {
+  padding-top: 5px;
+}
+
+.padder {
+  padding: 10px;
+}
+
+.marginner {
+  margin: 10px;
+}
