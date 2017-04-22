@@ -49,7 +49,12 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="height: 40%; background-position: center center; background-repeat: no-repeat; background-size: cover; background: url('/img/leicester.png');">
+    <div class="container-fluid" style="
+            height: 40%; 
+            background-position: center center; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background: url('/img/leicester.png');">
         <div style="height: 40%;">
         </div>
     </div>

@@ -4,20 +4,22 @@
     <title>Markdown</title>
     <?php include "../php/header.php"; ?>
 </head>
-<body class="background-dark">
+<body>
 
     <?php include "../php/nav.php"; ?>
 
+    <div class="container-fluid background-primary-three" style="height: 30%;">
+        <div class="container" style="height: 50%;">
+
+        </div>
+        <div class="container text-center" style="height: 50%;">
+            <h1 style="color: #FFF;">Markdown</h1>
+        </div>
 
         <div class="container">
-            <div class="row">
-                    <div class="header-content text-center" style="margin: 30% 0 0 0;">
-                        <div class="header-content-inner">
-                            <h1 style="color: white;">Coming soon :)</h1>
-                        </div>
-                    </div>
-            </div>
+            <h2 class="text-center">Coming soon :)</h2>
         </div>
+    </div>
 
     <?php include "../php/scripts.php"; ?>
 
