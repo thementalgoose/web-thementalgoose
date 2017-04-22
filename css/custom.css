@@ -1,0 +1,186 @@
+.background-dark {
+  background: #383848;
+}
+.background-black {
+  background: #1F1F1F;
+  color: #F5F5F5;
+}
+.background-light {
+	background: #F5F5F5;
+}
+
+.margin-top-20: {
+	margin-top: 20%;
+}
+
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #383848;
+  display: inline-block;
+}
+
+#photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+#photo-percentage img{
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  padding: 5px;
+  display: inline-block;
+}
+
+#photo-percentage:hover {
+  transform: scale(0.9);
+}
+
+#photo-header{
+  margin-top: -75px;
+}
+
+.content {
+  margin-top: 150px;
+  background: #fff;
+}
+
+.box-padder {
+  padding: 10px;
+}
+
+.colour-primary {
+  color: #8E24AA;
+}
+
+.progress {
+  height: 10px;
+}
+.progress-bar {
+  height: 10px;
+}
+.education {
+    list-style: none;
+}
+.description {
+    display: inline-block;
+    background: #eee;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    position: relative;
+    padding: 0px border-bottom: 1px solid #ddd;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-invisible {
+    /* Add shadows to create the "card-invisible" effect */
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-invisible:hover {
+    /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
+}
+
+.card-contact {
+    /* Add shadows to create the "card" effect */
+    color: #FFFFFF;
+    background: #484858;
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-contact:hover {
+    background: #585868;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*.background-a {
+  background: #F3FFF5; 
+}
+.background-b {
+  background: #FAF2FE;
+}
+.background-c {
+  background: #F4FCF2;
+}*/
+.link-gitlab {
+  color: #FC6D26;
+}
+.link-gitlab:hover {
+  transform: scale(1.1);
+  color: #FCBD76;
+}
+.link-github {
+  color: #181818;
+}
+.link-github:hover {
+  transform: scale(1.1);
+  color: #585858;
+}
+.link-google-play {
+  color: #00C9FF;
+}
+.link-google-play:hover {
+  transform: scale(1.1);
+  color: #40FFFF;
+}
+.link-google-plus {
+  color: #F84054;
+}
+.link-google-plus:hover {
+  transform: scale(1.1);
+  color: #F88094;
+}
+.link-linkedin {
+  color: #0077B5;
+}
+.link-linkedin:hover {
+  transform: scale(1.1);
+  color: #40B7E5;
+}
+.link-mail {
+  color: #6F6F6F;
+}
+.link-mail:hover {
+  transform: scale(1.1);
+  color: #AFAFAF;
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

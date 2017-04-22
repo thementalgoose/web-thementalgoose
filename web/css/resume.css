@@ -1,7 +1,0 @@
-#cv-header {
-  color: #1976D2;
-}
-#cv-header:before {
-  content: '>';
-  margin-right: 5px;
-}

@@ -1,7 +1,0 @@
-function conmd {
-	echo Converting....
-	pandoc -c ~/.pdf/newmarkdown.css -V fontsize=12pt $1.md -o $1.html
-	wkhtmltopdf --footer-html ~/.pdf/footer.html $1.html $1.pdf
-	rm -r $1.html
-	echo Finished
-}

@@ -7,8 +7,8 @@ env:
 addons:
   ssh_known_hosts: jordanfisher.me
 before_install:
-- bash .script/install.sh
+# - bash .script/install.sh
 script:
 - echo Posting data
 after_success:
-- bash .script/push.sh
+# - bash .script/push.sh
