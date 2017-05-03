@@ -20,9 +20,9 @@
                 <li>
                     <a class="page-scroll" href="/blog">Blog</a>
                 </li>
-                <li>
+                <!--<li> 
                     <a class="page-scroll" href="/markdown">Markdown</a>
-                </li>
+                </li> -->
             </ul>
         </div>
         <!-- /.navbar-collapse -->

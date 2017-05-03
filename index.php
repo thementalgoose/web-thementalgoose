@@ -6,22 +6,24 @@
     <?php include "php/header.php"; ?>
 </head>
 
-<body id="page-top">
+<body id="page-top" class="loaded">
 
     <?php include "php/nav.php"; ?>
 
-    <header>
-        <div class="container">
+    <div class="header-background-colour" style="height: 100%; width: 100%;">
+        <div style="height: 100%; width: 100%;" id="particles-js">
+        </div>
+        <div class="container" style="height: 100%; text-align: center; transform: translateY(-100%);">
             <div class="row">
-                <div class="header-content">
-                    <div class="header-content-inner">
-                        <h1>I'm Jordan and I write <br/><span class="element"></span></h1> 
+                <div class="header-content-center">
+                    <div class="header-content-inner-center">
+                        <h1 class="header-h1-center">I'm Jordan and I write <br/><span class="element"></span></h1> 
                         <a href="#info" class="btn btn-outline btn-xl page-scroll">About me</a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="container" id="info">
         <div class="row" style="margin-top: 5%; margin-bottom: 5%;">
@@ -187,6 +189,12 @@
             loop: true
           });
       });
+    </script>
+    <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', '/js/package.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
     </script>
 
 </body>

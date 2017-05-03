@@ -12,3 +12,6 @@
 
 <!-- Types -->
 <script src="/js/typed.min.js"></script>
+
+<!-- Particles -->
+<script src="/js/particles.min.js"></script>

@@ -3,6 +3,10 @@
 <head>
     <title>Blog</title>
     <?php include "../php/header.php"; ?>
+
+    <?php 
+        require ('../php/Parsedown.php');
+    ?>
 </head>
 <body>
 
@@ -19,10 +23,14 @@
         <div class="container">
             <div class="col-sm-4 col-xs-2">
                 <h2>Posts</h2>
-                <p>No posts :(</p>
+                <h4><a href="#">Continuous Deployment on a VPS</a></h4>
             </div>
             <div class="col-sm-8 col-xs-10">
-
+            <?php
+                $parsedown = new Parsedown();
+                $file_contents = file_get_contents('posts/continuousdeployment.md'); 
+                echo $parsedown -> text($file_contents);
+            ?>
             </div>
         </div>
     </div>
