@@ -370,9 +370,9 @@ This is also the reason why the internalisation of your `.git` folder doesn't ma
 
 With all that, we have successfully setup the Continuous deployment mechanism for the website. Keep in mind that your mileage may vary, but this should work as described above. We have addressed all relevant security for the web app by providing encrypted keys and restricted permissions with the accounts we are using.
 
-Continuous deployment is something that in practice will save you a lot of time, and even though it's a ball-ache to setup, it's worth it in the end. You can checkout a live demonstration of this [here](https://github.com/thementalgoose/JordanFisherWebsite) 
+Continuous deployment is something that in practice will save you a lot of time, and even though it's a ball-ache to setup, it's worth it in the end. This website will soon be using continuous deployment as a method of deploying, once i've finished re-writing it
 
-Remember that the process of continuous deployment is awkward to test, so any scripts that you have running (I have [generatemd.sh](https://github.com/thementalgoose/JordanFisherWebsite/blob/master/.script/generatemd.sh) which moved my `post.md` to `/post` and then parses it using external libraries) was incredibly fiddily to setup. Expect problems, but when all the problems are ironed out, you will have a reliable and robust deployment solution
+Remember that the process of continuous deployment is awkward to test, so any scripts that you have running could be incredibly fiddily to setup. Expect problems, but when all the problems are ironed out, you will have a reliable and robust deployment solution
 
 ---
 

@@ -6,7 +6,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 } else {
 	$mobile = false;
 }
-if ($_GET['m'] == 1)
+if (isset($_GET['m']) && $_GET['m'] == 1)
 	header('Location: old/index.php?m=1');
 ?>
 
