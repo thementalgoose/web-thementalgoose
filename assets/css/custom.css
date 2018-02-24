@@ -1,0 +1,16 @@
+/*! Place your custom styles here */
+
+.menu-horizontal li {
+	font-size: 18px;
+}
+
+.cv_hr {
+	margin: 5px 10% 25px 10%;
+	border-color: #9C27B0;
+	opacity: 0.65;
+	color: #9C27B0;
+}
+
+.typed-cursor {
+	color: #9C27B0 !important;
+}
