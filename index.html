@@ -1,167 +1,574 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>jordanfisher.me</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/assets/css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
-        <link href="/assets/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/assets/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet" type="text/css">
-        <link href="/assets/css/font-roboto.css" rel="stylesheet" type="text/css">
-        <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
-        <link rel="manifest" href="/assets/img/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-    </head>
-    <body data-smooth-scroll-offset="77">
-        <div class="nav-container">
-            <div class="via-1518966648492" via="via-1518966648492" vio="Main Nav">
-                <div class="bar bar--sm visible-xs">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-3 col-md-2">
-                                <a href="/"> <img class="logo logo-dark" alt="logo" src="/assets/img/icon.png"> <img class="logo logo-light" alt="logo" src="/assets/img/icon.png"> </a>
-                            </div>
-                            <div class="col-9 col-md-10 text-right">
-                                <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm"> <i class="icon icon--sm stack-interface stack-menu"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <nav id="menu1" class="bar bar-1 hidden-xs">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-1 col-md-2 hidden-xs">
-                                <div class="bar__module">
-                                    <a href="/"> <img class="logo logo-dark" alt="logo" src="/assets/img/icon.png"> <img class="logo logo-light" alt="logo" src="/assets/img/icon.png"> </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
-                                <div class="bar__module">
-                                    <ul class="menu-horizontal text-left">
-                                        <li> <a href="/cv" target="_self">
-                                        CV</a> </li>
-                                        <li> <a href="/portfolio" target="_self">
-                                        PORTFOLIO</a> </li>
-                                        <li> <a href="/blog" target="_self">
-                                        BLOG</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+<html>
+
+<head>
+    <title>Jordan Fisher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/socicon.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/timeline.css" />
+
+    <!-- JavaScript -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="assets/js/pt.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/shuffle.min.js"></script>
+    <script src="assets/js/style.js"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+
+</head>
+
+<body class="background-dark" id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top background-dark" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" id="nav_title" href="#page-top"><strong>J</strong>ORDAN <strong>F</strong>ISHER</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto" id="top-menu">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" disabled>Blog <i class="fas fa-link"></i></a> <!-- href="/blog" -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="particles-config" id="particles-js" style="z-index: -1;"></div>
+
+    <header>
+      <div class="flex-container height-100-percent">
+        <div class="flex-centered-item text-white">
+          <h1>Hi! I'm <span class="primary">Jordan Fisher</span>,<br/>
+              I'm a<span class="element">n Android App Developer</span></h1>
+          <br/><br/>
+          <h2><a href="#about" class="link-box-no-background"><i class="icon-move-without-background fas fa-angle-double-down"></i></a></h2>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="background-light">
+      <h1 id="about-title" class="animated text-center">About</h1>
+      <hr id="about-break" class="animated">
+      <div class="spacer-5"></div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12 padding-10-px">
+            <h1 class="animated secondary" id="about-me"><i class="fas fa-user-circle"></i></h1>
+            <div id="about-me-box" class="animated padding-10-px">
+              <h3>Me</h3>
+              <p>My name is Jordan, i'm <span id="age">XX</span> years old and I live in Leicestershire, England</p>
             </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 padding-10-px">
+            <h1 class="animated secondary" id="about-passion" data-delay="200"><i class="fas fa-heart"></i></h1>
+            <div id="about-passion-box" class="animated padding-10-px" data-delay="200">
+              <h3>Passion</h3>
+              <p>I have a strong passion for technology, and love making cool stuff!</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 padding-10-px">
+            <h1 class="animated secondary" id="about-info" data-delay="400"><i class="fas fa-pause-circle"></i></h1>
+            <div id="about-info-box" class="animated padding-10-px" data-delay="400">
+              <h3>Currently</h3>
+              <p>Currently I am study for a degree in Computer Science from the University of Leicester</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 padding-10-px">
+            <h1 class="animated secondary" id="about-future" data-delay="600"><i class="fas fa-chevron-circle-right"></i></h1>
+            <div id="about-future-box" class="animated padding-10-px" data-delay="600">
+              <h3>Future</h3>
+              <p>Hoping to become a software developer with the possibility of using new tech and new gadgets to develop software for them</p>
+            </div>
+          </div>
         </div>
-        <div class="main-container">
-            <section class="cover imagebg text-center height-90" data-overlay="8">
-                <div class="background-image-holder"><img alt="background" src="/assets/img/index-cover.jpeg"></div>
-                <div class="container pos-vertical-center">
-                    <div class="row">
-                        <div class="col-md-9 col-lg-8">
-                            <h1><b>J</b>ORDAN&nbsp;<b>F</b>ISHER</h1>
-                            <p style="height: 150px;" class="lead">Software Developer from Leicester, England specialising in Android Apps (Java and Kotlin) with experience working with <span class="element">the full web development stack</span></p>
-                        </div>
-                    </div>
+      </div>
+      <div class="spacer-5"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5 text-center animated" id="profile-download">
+            <img class="profile-image" src="assets/img/profile.png">
+            <h2 style="margin-bottom: 20px;">Information</h2>
+            <p style="margin-bottom: 20px; padding: 20px;">If you want all this information in a form such as paper, you can download my CV below</p>
+            <a href="JordanFisher.pdf" class="button-secondary"><span class="box"></span>Download</a>
+            <div class="spacer-5"></div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-java"><h6 class="bar-text">Java</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-java-bar">
+                <div class="bar-holder">
+                  <span class="bar-end">10+ proj, 7y</span>
+                  <div class="bar" style="width: 70%">
+                    <p>Android, JSP, Servlet, Crypto, JAR, ...</p>
+                  </div>
                 </div>
-                <div class="background-image-holder" id="particles-js"> </div>
-            </section>
-            <section class="bg--secondary space--xs">
-                <div class="container">
-                    <div class="row text-block">
-                        <div class="col-md-12">
-                            <h3>Recent posts</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <article class="feature feature-1">
-                                <a href="/blog/20180218-new-website" class="block" target="_self"> <img alt="Image" src="/assets/img/recruitment-1.jpg"> </a>
-                                <div class="feature__body boxed boxed--border"> <span>Feb 18th 2018</span>
-                                    <h5>The fifth iteration of this website</h5> <a href="/blog/20180218-new-website" target="_self">
-                            Read More
-                        </a> </div>
-                            </article>
-                        </div>
-                        <div class="col-md-4">
-                            <article class="feature feature-1">
-                                <a href="/blog/20170627-continuous-deployment" class="block" target="_self"> <img alt="Image" src="/assets/img/index-cover.jpeg"> </a>
-                                <div class="feature__body boxed boxed--border"> <span>June 27th 2017&nbsp;</span>
-                                    <h5>Setting up Continuous Deployment with a static website, Github and Travis CI</h5> <a href="/blog/20170627-continuous-deployment" target="_self">
-                            Read More
-                        </a> </div>
-                            </article>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-android" data-delay="50"><h6 class="bar-text">Android</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-android-bar" data-delay="50">
+                <div class="bar-holder">
+                  <span class="bar-end">5+ proj, 5y</span>
+                  <div class="bar" style="width: 60%">
+                    <p>Kotlin/Java, Realm, Retrofit, Glide, Firebase, ROOM</p>
+                  </div>
                 </div>
-            </section>
-            <footer class="footer-7 text-center-xs bg--dark">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6"> <span class="type--fine-print">© <span class="update-year">2018</span> Jordan Fisher — All Rights Reserved</span>
-                        </div>
-                        <div class="col-sm-6 text-right text-center-xs">
-                            <ul class="social-list list-inline">
-                                <li><a href="http://www.github.com/thementalgoose" target="_self"><i class="socicon icon socicon-github icon--xs"></i></a></li>
-                                <li><a href="https://play.google.com/store/apps/developer?id=Jordan+Fisher" target="_self"><i class="socicon icon socicon-play icon--xs"></i></a></li>
-                                <li><a href="https://plus.google.com/+JordanFisherS" target="_self"><i class="socicon icon socicon-googleplus icon--xs"></i></a></li>
-                                <li><a href="mailto:thementalgoose@gmail.com" target="_self"><i class="socicon icon material-icons icon--xs">email</i></a></li>
-                                <li><a href="https://www.linkedin.com/in/jordanspencerfisher/" target="_self"><i class="socicon icon socicon-linkedin icon--xs"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-web" data-delay="100"><h6 class="bar-text">Web</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-web-bar" data-delay="100">
+                <div class="bar-holder">
+                  <span class="bar-end">10+ proj, 5y</span>
+                  <div class="bar" style="width: 60%">
+                    <p>HTML, HTML5, CSS, JS, TS, PHP, jQuery</p>
+                  </div>
                 </div>
-            </footer>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-csharp" data-delay="150"><h6 class="bar-text">C#</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-csharp-bar" data-delay="150">
+                <div class="bar-holder">
+                  <span class="bar-end">2 proj, 3y</span>
+                  <div class="bar" style="width: 55%">
+                    <p>Programs, APIs, .NET Core, ASP.NET</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-mean" data-delay="200"><h6 class="bar-text">MEAN</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-mean-bar" data-delay="200">
+                <div class="bar-holder">
+                  <span class="bar-end">2 proj, 1y</span>
+                  <div class="bar" style="width: 45%">
+                    <p>MongoDB, ExpressJS, Angular2, NodeJS, ES6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-python" data-delay="250"><h6 class="bar-text">Python</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-python-bar" data-delay="250">
+                <div class="bar-holder">
+                  <span class="bar-end">20+ scrpt, 3y</span>
+                  <div class="bar" style="width: 50%">
+                    <p>Scripting Language of choice</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-haskell" data-delay="300"><h6 class="bar-text">Haskell</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-haskell-bar" data-delay="300">
+                <div class="bar-holder">
+                  <span class="bar-end">1 mod, 3m</span>
+                  <div class="bar" style="width: 40%">
+                    <p>List, Tree, Binary, Pure functional methodology</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-firebase" data-delay="350"><h6 class="bar-text">Firebase</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-firebase-bar" data-delay="350">
+                <div class="bar-holder">
+                  <span class="bar-end">2 proj, 1y</span>
+                  <div class="bar" style="width: 45%">
+                    <p>Andorid / Web (Angular2) integration.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-spring" data-delay="400"><h6 class="bar-text">Spring IO</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-spring-bar" data-delay="400"> 
+                <div class="bar-holder">
+                  <span class="bar-end">2 proj, 1.5y</span>
+                  <div class="bar" style="width: 50%">
+                    <p>Complete Web Apps with Hibernate ORM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-gradle" data-delay="450"><h6 class="bar-text">Gradle</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-gradle-bar" data-delay="450">
+                <div class="bar-holder">
+                  <span class="bar-end">10+ proj, 4y</span>
+                  <div class="bar" style="width: 60%">
+                    <p>Automated builds and tasks for Java / Android. Cucumber Unit Testing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-azure" data-delay="500"><h6 class="bar-text">Azure</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-azure-bar" data-delay="500">
+                <div class="bar-holder">
+                  <span class="bar-end">1 proj, 3m</span>
+                  <div class="bar" style="width: 40%">
+                    <p>Deploying API to Azure Network</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 text-center background-primary text-white animated" id="skill-git" data-delay="550"><h6 class="bar-text">Git</h6></div>
+              <div class="col-8 col-sm-9 col-md-10 no-padding animated" id="skill-git-bar" data-delay="550">
+                <div class="bar-holder">
+                  <span class="bar-end">2 proj, 2y</span>
+                  <div class="bar" style="width: 45%">
+                    <p>Travis CI for CD, Pipelines, Docker</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spacer-5"></div>
         </div>
-        <script src="/assets/js/jquery-3.1.1.min.js"></script>
-        <script src="/assets/js/parallax.js"></script>
-        <script src="/assets/js/smooth-scroll.min.js"></script>
-        <script src="/assets/js/scripts.js"></script>
-        <script src="/assets/js/typings.min.js"></script>
-        <script src="/assets/js/particles.min.js"></script>
-        <script>
+      </div>
+    </section>
+
+    <section id="projects" class="text-center background-gray">
+      <h1 id="projects-title" class="animated">Projects</h1>
+      <hr id="projects-break" class="animated">
+      <div class="spacer-5"></div>
+      <div class="container">
+        <div class="flex-container flex-projects text-center">
+          <div class="flex-project-item animated" id="project-gal-app-amiwrong" style="background-image: url(assets/img/gal-app-amiwrong.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4><strong>Am I Wrong</strong></h4>
+                <p>Moral Ambiguity App (<a href="https://hack24.co.uk">Hack24</a>)<br/><strong class="primary">Android App</strong></p>
+              </div>
+              <div class="bottom text-center">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=studio.roboto.hack24">App Store</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-app-drivingtutor" data-delay="50" style="background-image: url(assets/img/gal-app-drivingtutor.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4><strong>Driving Tutor</strong></h4>
+                <p>AIO Driving Revision Tool<br/><strong class="primary">Android App</strong></p>
+              </div>
+              <div class="bottom text-center">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=jsf.driving.drivingtutor">App Store</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-web-j21" data-delay="100" style="background-image: url(assets/img/gal-web-j21.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4>J21 Driving School</h4>
+                <p>Business Website for J21 Driving School<br/><strong class="primary">Website</strong></p>
+              </div>
+              <div class="bottom text-center">
+                <a target="_blank" href="https://j21drivingschool.co.uk">View Site</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-spacegame" data-delay="150" style="background-image: url(assets/img/gal-spacegame.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4>Educational Space Game</h4>
+                <p>Space Game with 8 players built in Java<br/><strong class="primary">Game</strong></p>
+              </div>
+              <!-- <div class="bottom text-center">
+                <a>View More</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-app-cmai" data-delay="200" style="background-image: url(assets/img/gal-app-cmai.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4><strong>CMAI</strong></h4>
+                <p>Easy Installed of CyanogenMod Apps<br/><strong class="primary">Android App</strong></p>
+              </div>
+              <div class="bottom text-center">
+                <a target="_blank" href="http://forum.xda-developers.com/android/apps-games/app-cm-app-installer-t2959922">XDA Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-web-old" data-delay="250"  style="background-image: url(assets/img/gal-web-old.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4>jordanfisher.me</h4>
+                <p>My personal website (currently on v6)<br/><strong class="primary">Website</strong></p>
+              </div>
+              <div class="bottom text-center">
+                <a target="_blank" href="/old/">View (old) Site</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-web-flatfinder" data-delay="300"  style="background-image: url(assets/img/gal-web-flatfinder.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4>FlatFinder</h4>
+                <p>Complete Rental Website for Students (messaging, buddy up functionality)<br/><strong class="primary">Website</strong></p>
+              </div>
+              <!-- <div class="bottom text-center">
+                <a>View More</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-web-bookmark" data-delay="350"  style="background-image: url(assets/img/gal-web-bookmark.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4>Bookmark Explorer</h4>
+                <p>Bookmark Utility Website (Built in MEAN stack)<br/><strong class="primary">Website</strong></p>
+              </div>
+              <!-- <div class="bottom text-center">
+                <a>View More</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-app-schedule" data-delay="400" style="background-image: url(assets/img/gal-app-schedule.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4><strong>Schedule</strong></h4>
+                <p>All In One Resource Management tool (dissertation)<br/><strong class="primary">Android App</strong></p>
+              </div>
+              <!-- <div class="bottom text-center">
+                <a>View More</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-java3d" data-delay="450"  style="background-image: url(assets/img/gal-java3d.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4>Java3D Simulation</h4>
+                <p>Space Simulation built in Java3D<br/><strong class="primary">Simulation</strong></p>
+              </div>
+              <!-- <div class="bottom text-center">
+                <a>View More</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-space-invaders" data-delay="500"  style="background-image: url(assets/img/gal-space-invaders.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4>Space Invaders</h4>
+                <p>Space Invaders game, built in Java<br/><strong class="primary">Game</strong></p>
+              </div>
+              <!-- <div class="bottom text-center">
+                <a>View More</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="flex-project-item animated" id="project-gal-chat-server" data-delay="550" style="background-image: url(assets/img/gal-chat-server.png);">
+            <div class="overlay">
+              <div class="top text-center">
+                <h4>Chat Server</h4>
+                <p>Java-based Networking Chat Server<br/><strong class="primary">Program</strong></p>
+              </div>
+              <!-- <div class="bottom text-center">
+                <a>View More</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="background-light">
+      <h1 id="education-title" class="text-center animated">Experience</h1>
+      <hr id="education-break" class="animated">
+      <div class="container cd-container" id="cd-timeline">
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-item text-center animated" id="experience-roller-2-icon">
+            <div class="cd-timeline-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+          </div>
+          <div class="cd-timeline-content">
+            <div class="animated" id="experience-roller-2">
+              <h3 class="primary">Software Developer</h3>
+              <h2><a href="https://rolleragency.ac.uk">Roller Agency <i class="icon-rotate fas fa-link"></i></a></h2>
+              <p>General Software Developer for Roller Agency, contributring to a variety of different apps and technologies</p>
+              <p>Built first POC app using newly developed SDK</p>
+              <p>Experience with Google Tag Manager and Craft websites</p>
+              <p>Contributor to Angular2 web project based on Firebase Realtime Database</p>
+            </div>
+            <span class="cd-date animated" id="experience-roller-2-date">Jun 17 - Current</span>
+          </div>
+        </div>
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-item text-center animated" id="experience-roller-1-icon">
+            <div class="cd-timeline-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+          </div>
+          <div class="cd-timeline-content">
+            <div class="animated" id="experience-roller-1">
+              <h3 class="primary">Android App Developer</h3>
+              <h2><a href="https://rolleragency.co.uk">Roller Agency <i class="icon-rotate fas fa-link"></i></a></h2>
+              <p>Experience in projects using Realm, Retrofit, Glide, ROOM, Firebase, LibGDX (mobile game), most of which are deployed on the app store.</p>
+              <p>7+ apps developed during my time, most of which are on the play store</p>
+              <p>Co-authored, and contributor to design and implementation of large scale Android-based "SDK" project to streamline custom app development by handling backend services and communication</p>
+            </div>
+            <span class="cd-date animated" id="experience-roller-1-date">Jun 16 - Jun 17</span>
+          </div>
+        </div>
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-item text-center animated" id="experience-uni-icon">
+            <div class="cd-timeline-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+          </div>
+          <div class="cd-timeline-content">
+            <div class="animated" id="experience-uni">
+              <h3 class="primary">Computer Science Degree</h3>
+              <h2><a href="https://le.ac.uk">University Of Leicester <i class="icon-rotate fas fa-link"></i></a></h2>
+              <p>
+                <ul>
+                  <li>Program Design</li>
+                  <li>Requirements Engineering</li>
+                  <li>Computer Systems</li>
+                  <li>Logic and Problem Solving</li>
+                  <li>Automata, Language and Computation</li>
+                  <li>Operating Systems, Networks and Distributed Systems</li>
+                  <li>Functional Programming</li>
+                  <li>Software Engineering</li>
+                  <li>Computational Intelligence for Software Engineering</li>
+                  <li>Web Technologies</li>
+                  <li>Cryptography and Intenet Security</li>
+                </ul>
+              </p>
+            </div>
+            <span class="cd-date animated" id="experience-uni-date">Sept 14 - Aug 2018 (Expected)</span>
+          </div>
+        </div>
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-item text-center animated" id="experience-lutterworth-icon">
+            <div class="cd-timeline-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+          </div>
+          <div class="cd-timeline-content">
+            <div class="animated" id="experience-lutterworth">
+              <h3 class="primary">A Levels</h3>
+              <h2><a href="http://www.lutterworthcollege.org.uk/">Lutterworth College <i class="icon-rotate fas fa-link"></i></a></h2>
+              <p>
+                <ul>
+                  <li>Mathematics (A2): <strong>A*</strong></li>
+                  <li>Physics (A2): <strong>A</strong></li>
+                  <li>Computing (A2): <strong>A</strong></li>
+                  <li>Chemistry (AS): <strong>A</strong></li>
+                </ul>
+              </p>
+            </div>
+            <span class="cd-date animated" id="experience-lutterworth-date">Sept 2012 - Sept 2014</span>
+          </div>
+        </div>
+        <div class="flex-container"></div>
+
+      </section>
+
+    <section id="contact" class="background-dark text-center text-white">
+      <h1 id="contact-title" class="animated">Fancy a chat?</h1>
+      <hr id="contact-break" class="animated white">
+      <div class="spacer-5"></div>
+      <p class="text-faded animated padding-10-px" id="contact-message">If there's anything I can help you with feel free start a chat with me through the widget below</p>
+      <div class="spacer-10"></div>
+    </section>
+
+    <section id="footer" class="background-dark-gray text-center">
+      <a href="#page-top"><i class="fas top-of-page background-primary fa-chevron-up"></i></a>
+      <div class="spacer-5"></div>
+      <div class="flex-container flex-links">
+        <div class="flex-link">
+          <h3><a href="https://gitlab.com/thementalgoose" target="_blank" class="link-box background-dark"><i class="icon-move fab fa-gitlab"></i></a></h3>
+        </div>
+        <div class="flex-link">
+          <h3><a href="https://linkedin.com/in/jordanspencerfisher" target="_blank" class="link-box background-dark"><i class="icon-move fab fa-linkedin-in"></i></a></h3>
+        </div>
+        <div class="flex-link">
+          <h3><a href="mailto:thementalgoose@gmail.com" target="_blank" class="link-box background-dark"><i class="icon-move far fa-envelope"></i></a></h3>
+        </div>
+        <div class="flex-link">
+          <h3><a href="https://play.google.com/store/apps/developer?id=Jordan+Fisher" target="_blank" class="link-box background-dark"><i class="icon-move fab fa-google-play"></i></a></h3>
+        </div>
+      </div>
+      <div class="spacer-5"></div>
+      <p class="text-faded">Jordan Fisher <i class="far fa-copyright"></i><span id="year"></span></p>
+      <div class="spacer-5"></div>
+      <div class="flex-container"></div>
+    </section>
+
+
+    <div id="scripts">
+      <script>
         /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
         particlesJS.load('particles-js', '/assets/js/particles.json', function() {
           console.log('callback - particles.js config loaded');
         });
-        </script>
-
-        <script>
+      </script>
+      <script>
         /* Typed */
           document.addEventListener('DOMContentLoaded', function(){
               Typed.new('.element', {
                 strings: [
-                    "the full web development stack",
-                    "C# Web apps and projects",
-                    "angular2 (ES6)",
-                    "nodejs",
-                    "front-end web languages",
-                    "firebase",
-                    "mongodb",
-                    "REST APIs",
-                    "Java / Kotlin projects",
-                    "unit testing",
-                    "python",
-                    "haskell"
+                    " Full Stack Web developer",
+                    "n Angular2 developer",
+                    " Haskell developer",
+                    " TypeScript developer",
+                    " PHP developer",
+                    "n SQL developer",
+                    " Java developer",
+                    " C# developer",
+                    " MEAN stack developer",
+                    " Python developer",
+                    " Spring developer",
+                    " Geek",
+                    "n Android App developer"
                 ],
                 typeSpeed: 40,
                 backDelay: 1500,
@@ -170,6 +577,7 @@
               });
           });
         </script>
+
         
         <!-- Start of Async Drift Code -->
         <script>
@@ -195,7 +603,7 @@
         drift.load('ibvdvyrhwwwn');
         </script>
         <!-- End of Async Drift Code -->
-
-    </body>
+    </div>
+</body>
 
 </html>
