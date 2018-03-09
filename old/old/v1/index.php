@@ -7,7 +7,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 	$mobile = false;
 }
 if (isset($_GET['m']) && $_GET['m'] == 1)
-	header('Location: /old/v1/index.php?m=1');
+	header('Location: /old/old/v1/index.php?m=1');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -54,7 +54,7 @@ if (isset($_GET['m']) && $_GET['m'] == 1)
 			<div class="home_wrapper">
 				<p id="hi">Hello</p>
 				<p id="intro">I'm Jordan, and I write code</p>
-				<p>This website is old! Current version is avalable <a href="../../">here</a></p>
+				<p>This website is old! Current version is avalable <a href="../../../">here</a></p>
 				<hr width="50%" />
 			</div>
 		</div>
