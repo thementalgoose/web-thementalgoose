@@ -162,8 +162,39 @@ section#footer {
 }
 
 
+.flex-skills {
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.flex-skill-item {
+  padding: 5px;
+  min-width: 185px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-
+  width: 185px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.flex-skill-item img {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #01e1e4;
+}
+.flex-skill-item h3 {
+  margin-top: 20px;
+}
+.flex-skill-item p {
+  margin-top: 10px;
+}
+.flex-skill-item img:hover {
+  background: #01e1e4;
+}
 
 .flex-projects {
   align-content: flex-start;
@@ -366,8 +397,8 @@ section#footer {
             PROFILE
  */
 .profile-image {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 50%;
   background: #01e1e4;
   margin-bottom: 30px;

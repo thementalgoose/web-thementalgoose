@@ -9,6 +9,7 @@ $(document).ready(function(){
     items: [
       "about-title", 
       "about-break",
+      "about-break-2",
       "projects-title", 
       "projects-break",
       "education-title", 
