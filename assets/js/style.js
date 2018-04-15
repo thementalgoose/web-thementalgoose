@@ -110,6 +110,7 @@ $(document).ready(function(){
       "project-gal-web-flatfinder",
       "project-gal-web-bookmark",
       "project-gal-space-invaders",
+      "project-gal-snake",
       "project-gal-java3d",
       "project-gal-spacegame",
       "project-gal-chat-server"

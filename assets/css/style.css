@@ -205,6 +205,7 @@ section#footer {
   width: 350px;
   flex-grow: 1;
   height: 300px;
+  border: 10px solid #f4f4f4;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -311,8 +312,8 @@ section#footer {
   align-content: flex-start;
 }
 .flex-link {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 /**
             PRIMARY COLOUR 
@@ -584,3 +585,29 @@ a:hover .icon-rotate {
     transform: translateX(100%);
   }
 }
+
+
+
+/**
+            MODAL 
+*/
+.project-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.project-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
