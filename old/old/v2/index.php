@@ -71,7 +71,7 @@
       <div class="header-content-inner">
         <h1><?php echo $header_hello; ?></h1>
         <hr>
-        <p>This website is old! Current version is avalable <a href="../../">here</a></p>
+        <p>This website is old! Current version is avalable <a href="/">here</a></p>
         <div class="row">
           <div class="col-md-4 col-md-offset-4 text-center">
             <?php 
