@@ -169,11 +169,11 @@ section#footer {
 }
 .flex-skill-item {
   padding: 5px;
-  min-width: 185px;
+  min-width: 250px;
   margin-top: 10px;
   margin-bottom: 10px;
 
-  width: 185px;
+  width: 250px;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,7 +184,26 @@ section#footer {
   max-height: 100px;
   padding: 10px;
   border-radius: 50%;
-  background: #01e1e4;
+  background: #01c1c4;
+}
+.flex-skill-item-large { 
+  padding: 5px;
+  min-width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  width: 500px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.flex-skill-item-large img { 
+  max-width: 100px;
+  max-height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #01c1c4;
 }
 .flex-skill-item h3 {
   margin-top: 20px;
@@ -193,7 +212,7 @@ section#footer {
   margin-top: 10px;
 }
 .flex-skill-item img:hover {
-  background: #01e1e4;
+  background: #01c1c4;
 }
 
 .flex-projects {
@@ -280,10 +299,13 @@ section#footer {
   font-style: bold;
 }
 .flex-project-item .overlay .bottom a:hover {
-  background: #01e1e4;
+  background: #01c1c4;
   color: black;
   font-weight: bold;
   border: solid 2px black;
+}
+.skill-click:hover { 
+  text-decoration: underline;
 }
 
 
@@ -390,7 +412,7 @@ section#footer {
   background: #01c1c4;
 }
 .button-secondary:hover {
-  background: #01e1e4;
+  background: #01c1c4;
   color: white;
 }
 
@@ -401,7 +423,7 @@ section#footer {
   max-width: 150px;
   max-height: 150px;
   border-radius: 50%;
-  background: #01e1e4;
+  background: #01c1c4;
   margin-bottom: 30px;
 }
 
@@ -564,7 +586,7 @@ section#footer {
             HIGHLIGHT LINK
  */
 #top-menu li.active a {
-  color: #01e1e4;
+  color: #01c1c4;
 }
 
 
