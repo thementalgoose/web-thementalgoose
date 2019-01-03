@@ -1,5 +1,3 @@
 paste/pastes/*
 !paste/pastes/d
 blog/data
-.firebaserc
-firebase.json
