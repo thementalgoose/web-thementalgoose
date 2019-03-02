@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Continuous Deployment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/assets/old/assets/css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/assets/old/assets/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/assets/old/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/assets/old/assets/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/assets/old/assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/assets/old/assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet" type="text/css">
+        <link href="/assets/old/assets/css/font-roboto.css" rel="stylesheet" type="text/css">
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/old/assets/img/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/old/assets/img/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/old/assets/img/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/old/assets/img/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/old/assets/img/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/old/assets/img/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/old/assets/img/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/old/assets/img/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/old/assets/img/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/old/assets/img/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/old/assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/old/assets/img/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/old/assets/img/favicon-16x16.png">
+        <link rel="manifest" href="/assets/old/assets/img/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body data-smooth-scroll-offset="77">
+        <div class="nav-container">
+            <div class="via-1518966648492" via="via-1518966648492" vio="Main Nav">
+                <div class="bar bar--sm visible-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3 col-md-2">
+                                <a href="/assets/old/"> <img class="logo logo-dark" alt="logo" src="/assets/old/assets/img/icon.png"> <img class="logo logo-light" alt="logo" src="/assets/old/assets/img/icon.png"> </a>
+                            </div>
+                            <div class="col-9 col-md-10 text-right">
+                                <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm"> <i class="icon icon--sm stack-interface stack-menu"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="menu1" class="bar bar-1 hidden-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-1 col-md-2 hidden-xs">
+                                <div class="bar__module">
+                                    <a href="/assets/old/"> <img class="logo logo-dark" alt="logo" src="/assets/old/assets/img/icon.png"> <img class="logo logo-light" alt="logo" src="/assets/old/assets/img/icon.png"> </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                                <div class="bar__module">
+                                    <ul class="menu-horizontal text-left">
+                                        <li> <a href="/assets/old/cv" target="_self">
+                                        CV</a> </li>
+                                        <li> <a href="/assets/old/portfolio" target="_self">
+                                        PORTFOLIO</a> </li>
+                                        <li> <a href="/assets/old/blog" target="_self">
+                                        BLOG</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="main-container">
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <article>
+                                <div class="article__title text-center">
+                                    <h1 class="h2">Setting up Continuous Deployment with Github and Travis CI</h1> <span>February 28th 2018</span></div>
+<div class="article__body"> <img alt="Image" src="/assets/old/assets/img/index-cover.jpeg">
+<p>Website deployment is, as most of you will know, quite tedious. Invariably if you're using any sort of VCS for your server you'll know it involves committing code to a central server, then SSH-ing into your server, pulling the latest data and fixing any issues with the code, moving around persistent data whilst updating framework, etc. What this aims to do is automate that process for you, because after all why should it take you a long time to deploy your code. This aims to cut down the process to just two steps</p>
+<ul class="bullets">
+<li>Commit changes in the form of raw data (ie. Markdown formatting) or configuration files</li>
+<li>Let the server update and handle all your content automatically</li>
+</ul>
+<p>This will hopefully reduce the number of errors throughout your site, as well as being quicker than you ever could be. The process is called Continuous Deployment, and it is a difficult thing to pull off. However, all of the well known sites you use every day utilise continuous deployment, and it's one of the reaons they're so successful.</p>
+<p>This tutorial will show you how to setup a website, hosted on github that will continuous deploy on your server every time you commit code. </p>
+<p>This assumes that your server is live on your VPS under <code>/var/www/domain.com/</code> under an apache2 server, and that you are using an Ubuntu server distribution or CentOS (both are fairly interchangable). It also assumes that, scene as we are assuming that you have setup a server by on a specific folder, then you know what you're talking about when it comes to Web terminology, and ideas behind a Distributed Version Control System like Git</p>
+<p>If your website is currently deployed, grab all your source files and make sure they're available on your <strong>local machine</strong>! You will be pushing files from your local machine to github, which will invoke travis, which will launch to your VPS. You don't initially want your source files available online!</p>
+<h2>What we're going to do</h2>
+<hr />
+<p>We're going to be doing the following to setup the continuous deployment</p>
+<ul class="bullets">
+<li>Move all your web contents to one central folder on your local machine</li>
+<li>Creating a restricted access user</li>
+<li>Creating a ssh key for the user</li>
+<li>Encrypting the ssh key for travis to use (and setting up decrypting it)</li>
+<li>Setting up the scripts to run</li>
+</ul>
+<h2>Restricted access user on your VPS</h2>
+<hr />
+<p>It's a good idea when dealing with this continuous deployment system to create a restricted access user for your server that only has access to a certain set of directories, so that should the account be breached, it only has access to your web directory and nothing else on your VPS. The worst case scenario here is that your website gets compromised, but if this is the case you won't lose any data that isn't on github</p>
+<p>You can call this user whatever you want. I went with <code>github</code> for mine, but it's your choice. SSH into your server and create a user.</p>
+<p>It's a good idea to setup your <code>.git</code> folder in a directory <strong>outside</strong> your website content, in the interest of security. It doesn't matter which way you do it in the end as the security measures we implement will mean that everything cannot be seen on your web directory anyway, but some prefer to keep the live deployment stuff outside of the website</p>
+<p>For whatever you decide to do will affect what permissions you need to give this user. Both methods are detailed below and are limited to only the server implementation, so it can be swapped out any time. For the purposes of this tutorial, i'm using <code>/var/repo/</code> for the external implementation. You can skip over the section that doesn't apply to you</p>
+<h3>Creating the .git folder (External)</h3>
+<p>You will need to create a restricted access user to be used for accessing the file. We do this by only giving it overship over the relevant folders in the VPS </p>
+<pre><code class="language-bash">mkdir /var/repo
+adduser github
+chown -R github:github /var/www/domain.com
+chown -R github:github /var/repo</code></pre>
+<p>Once you have created all the folders, you need to sign into the new user you have made and initialise a &quot;bare&quot; git repository. This will be used as a target to push data too, and what travis will connect too</p>
+<pre><code class="language-bash">su - github
+cd /var/www/domain.com
+mkdir .git
+cd .git
+git init --bare</code></pre>
+<p>If everything has gone successfully you will see inside this <code>.git</code> folder some files and folders, one of which should be entitled <code>hooks</code>. You need to add a &quot;hook&quot;, which is a script which will run when something changes in the <code>.git</code> folder. For this, we will be editing the <code>post-receive</code> hook, which will run when a request is received from somewhere (in this instance, this will be our Travis CI server)</p>
+<pre><code>cd hooks/
+nano post-receive</code></pre>
+<p>And add the following files to the file</p>
+<pre><code>#!/bin/sh
+git --work-tree=/var/www/domain.com/ --git-dir=/var/repo/.git checkout -f</code></pre>
+<p>You can add any bash script or command you want in here. This will essentially run whenever Travis does, so it could include anything like permission modifications to certain files, bash file manipulation, moving files and managing content surrounding the <code>git checkout</code> step. This will be where your management comes, and will be specific to your website.</p>
+<p>Exit the file. You will need to remark the file as executable, so perform the following command below</p>
+<pre><code>chmod +x /var/www/domain.com/.git/hooks/post-receive</code></pre>
+<p>You should now be setup server side. Your repository should look like the following on your VPS</p>
+<pre><code>+- /var/www/domain.com
+|   +- css/
+|   +- js/
+|    - index.php
+|    - README.md
+|    - .gitignore
++- /var/repo
+    +- .git/
+        +- hooks/
+            +- post-receive
+</code></pre> 
+<h3>Creating the <strong>.git</strong> folder (Internal)</h3>
+<p>You will need to create a restricted access user to be used for accessing the file. We do this by only giving it overship over the relevant folders in the VPS </p>
+<pre><code class="language-bash">adduser github
+chown -R github:github /var/www/domain.com</code></pre>
+<p>Once you have created all the folders, you need to sign into the new user you have made and initialise a &quot;bare&quot; git repository. This will be used as a target to push data too, and what travis will connect too</p>
+<pre><code class="language-bash">su - github
+cd /var/www/domain.com
+mkdir .git
+cd .git
+git init --bare</code></pre>
+<p>If everything has gone successfully you will see inside this <code>.git</code> folder some files and folders, one of which should be entitled <code>hooks</code>. You need to add a &quot;hook&quot;, which is a script which will run when something changes in the <code>.git</code> folder. For this, we will be editing the <code>post-receive</code> hook, which will run when a request is received from somewhere (in this instance, this will be our Travis CI server)</p>
+<pre><code>cd hooks/
+nano post-receive</code></pre>
+<p>And paste the following code in. </p>
+<pre><code>#!/bin/sh
+cd /var/www/domain.com
+git checkout -f</code></pre>
+<p>You can add any bash script or command you want in here. This will essentially run whenever Travis does, so it could include anything like permission modifications to certain files, bash file manipulation, moving files and managing content surrounding the <code>git checkout</code> step. This will be where your management comes, and will be specific to your website.</p>
+<p>Exit the file. You will need to remark the file as executable, so perform the following command below</p>
+<pre><code>chmod +x /var/www/domain.com/.git/hooks/post-receive</code></pre>
+<p>You should now be setup server side. Your repository should look like the following on your VPS</p>
+<pre><code>+- /var/www/domain.com
+|    +- .git/
+|        +- hooks/
+|            +- post-receive
+|    +- css/
+|    +- js/
+|    - index.php
+|    - README.md
+|    - .gitignore
+</code></pre>
+<h2>Public key authentication</h2>
+<hr />
+<p>We need to setup a ssh authorisation key so that Travis can access your VPS securely without a password. To do this, you need to generate a ssh key and list the key in the <code>authorized_keys</code> file.</p>
+<p>To do this, on you <strong>local machine</strong>, enter the following. We can copy to your server by pasting it into the SSH terminal</p>
+<pre><code>cd ~
+ssh-keygen</code></pre>
+<p>When prompted to save it somewhere, call it something like <code>github-key</code>, leaving the passphrase</p>
+<pre><code>Generating public/private rsa key pair.
+Enter file in which to save the key (/home/user/.ssh/id_rsa): github-key
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in github-key.
+Your public key has been saved in github-key.pub.</code></pre>
+<p>Now, inside your <strong>VPS</strong>, make sure you are logged in as the <code>github</code> user</p>
+<pre><code>su - github</code></pre>
+<p>And create the <code>.ssh</code> folder and specify the authoized keys. This <code>.ssh/authorized_keys</code> file is the default location for SSH authenticated keys, and so placing it here does the authentication. No need to configure it in another file, etc.</p>
+<pre><code>mkdir .ssh
+chmod 700 .ssh
+nano .ssh/authorized_keys</code></pre>
+<p>And paste in the contents of the <code>github.pub</code> file. Make sure that it is the <strong>public</strong> file, and not your private key! Save and exit, and sort out the permissions for the file</p>
+<pre><code>chmod 600 .ssh/authorized_keys
+exit</code></pre>
+<h4>Finished server side</h4>
+<p>You are now setup server side! You can exit the github user and the server and leave it be. To summarise, what you should have done</p>
+<ul class="bullets">
+<li>Created a restricted access user and given it permissions to only the content folder and the repository folder (same folder if you're internally storing your <code>.git</code> folder)</li>
+<li>Setup a <code>post-receive</code> &quot;hook&quot; for the bare git repository to run upon a request.</li>
+<li>Created a SSH key that will be used between Travis and your VPS, and added it as an authorized key into the VPS in the <code>.ssh/authorized_keys</code></li>
+</ul>
+<p>If you haven't done any of those steps, this continuous deployment will fail. Please make sure you've done everything</p>
+<h2>Setting up Travis</h2>
+<hr />
+<p>From now on, all steps are on your <strong>local machine</strong> with the web content</p>
+<p>To setup travis, it is as simple as adding a <code>.travis.yml</code> file in the root of your repository. Travis will scan this and execute the file, and perform whatever you specify. The problem here is you need to &quot;spoof&quot; the SSH key so that Travis can access your server (through that <code>authorized_keys</code> file) </p>
+<p>You need to install a ruby travis program to your local machine, and use this to encrypt your private SSH key.</p>
+<p>Execute the following on your local machine (making sure you have ruby installed)</p>
+<pre><code>cd &lt;website-directory&gt;
+mv ~/github-key .
+gem install travis
+travis login
+travis encrypt-file github-key --add</code></pre>
+<p>If you are having issues running travis, try executing all travis commands in <code>sudo</code> and make sure you have the &quot;ruby&quot; and &quot;ruby developer tools&quot; (On an debian based system, execute <code>sudo apt-get install ruby-dev</code>)</p>
+<p>The travis login should allow you to login with your github account, and it will encrypt the file.</p>
+<p>You should now have a <code>.travis.yml</code> file present in your repository as well as a <code>github-key.enc</code>, with something resembling the following lines at the bottom. </p>
+<pre><code>before_install:
+  - openssl aes-256-cbc -K $encrypted_27292738e18d_key -iv $encrypted_27283648e18d_iv -in github-key.enc -out github-key -d</code></pre>
+<p>Please take this opportunity to <strong>delete your <code>github-key</code></strong> file (keeping the <code>.enc</code> file). Travis when executing will decrypt the <code>github-key.enc</code> into <code>github-key</code>, which you then place in the SSH private key default directory of <code>.ssh/id_rsa</code> in order to &quot;spoof&quot; the authentication</p>
+<h2>Scripts</h2>
+<hr />
+<p>The easiest way to do this is to modularise your deployment structure, so that you don't have one long confusing <code>.travis.yml</code> script. </p>
+<p>In the root of your website structure, make a folder <code>.script</code> and inside it create two files, namely <code>install.sh</code>, and <code>push.sh</code></p>
+<ul class="bullets">
+<li><code>install.sh</code> will perform the decryption of the ssh key and &quot;spoof&quot; it over the default ssh key location for Travis. This will make travis appear like a regular SSH connection defined between two hosts</li>
+<li><code>push.sh</code> will initialise a git repository inside travis and perform the &quot;push to deploy&quot; stage. This means that any processing you want to do on Travis can be propagated to your website without pushing to github</li>
+</ul>
+<h4>install.sh</h4>
+<p>Install will contain the openssl information generated from the previous step</p>
+<pre><code>#!/bin/bash
+# Import the SSH deployment key
+openssl aes-256-cbc -K $encrypted_8j6shs679246_key -iv $encrypted_8j6shs679246_iv -in github-key.enc -out github-key -d
+chmod 600 github-key
+mv github-key ~/.ssh/id_rsa</code></pre>
+<h4>push.sh</h4>
+<p>We only want this to happen if it's on the master branch, and so we perform a check in the push script</p>
+<pre><code>#!/bin/bash
+if [ $TRAVIS_BRANCH == 'master' ] ; then
+    git init
+
+    git remote add deploy "github@domain.com:/var/www/domain.com/"
+    git config user.name "Travis CI"
+    git config user.email "info@domain.com"
+
+    git add -A
+    git commit -m "Deploy"
+    git push --force deploy master
+else
+    echo "Not on master, not deploying"
+fi</code></pre>
+<p><strong>EXTERNAL</strong>: If you are using the external storage method for your <code>.git</code> folder, make sure that the remote add deploy line is substitutes for your directory of the git file</p>
+<pre><code>git remote add deploy "github@domain.com:/var/repo/"</code></pre>
+<p>With the creation of these files, we have modularised everything we want travis to perform. We can now have a simpler travis file that is much more coherant and understandable.</p>
+<p>Paste the following into your <code>.travis.yml</code> file.</p>
+<pre><code>language: ruby
+rvm:
+  - 2.1
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+addons:
+  ssh_known_hosts: domain.com
+before_install:
+  - bash .scripts/install.sh
+script:
+  - echo "I have no tests to perform on my website"
+after_success:
+  - bash .scripts/push.sh</code></pre>
+<p>With this, your website structure on your <strong>local machine</strong> should be as follows</p>
+<pre><code>+- &lt;website_directory&gt;
+|    +- .script/
+|    |    +- install.sh
+|    |    +- push.sh
+|    +- css/
+|    +- js/
+|    - index.php
+|    - README.md
+|    - .travis.yml
+|    - github-key.enc
+</code></pre>
+<p>That is all your scripts set up. With the completion of this, whenever a commit is made to Github, the following should happen</p>
+<ul class="bullets">
+<li>Github commit will launch Travis
+<li>Travis will initialise</li>
+<li>Travis will decrypt your ssh key</li>
+<li>Travis will &quot;spoof&quot; your ssh key in it's own <code>.ssh/id_rsa</code> field</li>
+<li>Travis will check if it's on a &quot;master&quot; branch
+<li>If so, it will initialise a git repository</li>
+<li>It will perform a <code>git push --force deploy master</code>, which will push to your ssh location</li>
+<li>Your website is deployed</li>
+</ul>
+<h2>Extra security</h2>
+<hr />
+<h3>.htaccess restrictions</h3>
+<p>You will find that you are storing those scripts to be run on travis inside your repository will mean that they're accessible through your web app. To get around this, you can add a <code>.htaccess</code> file to the root of your project where you can specify what files you want to return as not found.</p>
+<pre><code>RewriteEngine on
+RewriteBase /
+
+RedirectMatch 404 /\.</code></pre>
+<p>The following file returns a 404 error for any file or folder starting with a <code>.</code>, which will be </p>
+<ul class="bullets">
+<li><code>.git</code></li>
+<li><code>.gitignore</code></li>
+<li><code>.travis.yml</code></li>
+<li><code>.htaccess</code></li>
+</ul>
+<p>In order for this to work, you may need to SSH into your server and modify the <code>/etc/httpd/conf/httpd.conf</code> file so that the Apache2 server can read <em>htaccess</em> file. You need to scan this file, and change all occurances of <code>AllowOverride None</code> to <code>AllowOverride All</code>. This will require you to restart your server.</p>
+<p>This is also the reason why the internalisation of your <code>.git</code> folder doesn't matter, as the RedirectMatch will mean that your .git folder appears as a <strong>404</strong> on the clients page, and they won't be able to access</p>
+<h2>Finished!</h2>
+<hr />
+<p>With all that, we have successfully setup the Continuous deployment mechanism for the website. Keep in mind that your mileage may vary, but this should work as described above. We have addressed all relevant security for the web app by providing encrypted keys and restricted permissions with the accounts we are using.</p>
+<p>Continuous deployment is something that in practice will save you a lot of time, and even though it's a ball-ache to setup, it's worth it in the end. This website will soon be using continuous deployment as a method of deploying, once i've finished re-writing it</p>
+<p>Remember that the process of continuous deployment is awkward to test, so any scripts that you have running could be incredibly fiddily to setup. Expect problems, but when all the problems are ironed out, you will have a reliable and robust deployment solution</p>
+<hr />
+<p>Thanks for reading</p>
+<blockquote>~ Jordan</blockquote>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer-7 text-center-xs bg--dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6"> <span class="type--fine-print">© <span class="update-year">2018</span> Jordan Fisher — All Rights Reserved</span>
+                        </div>
+                        <div class="col-sm-6 text-right text-center-xs">
+                            <ul class="social-list list-inline">
+                                <li><a href="http://www.github.com/thementalgoose" target="_self"><i class="socicon icon socicon-github icon--xs"></i></a></li>
+                                <li><a href="https://play.google.com/store/apps/developer?id=Jordan+Fisher" target="_self"><i class="socicon icon socicon-play icon--xs"></i></a></li>
+                                <li><a href="https://plus.google.com/+JordanFisherS" target="_self"><i class="socicon icon socicon-googleplus icon--xs"></i></a></li>
+                                <li><a href="mailto:thementalgoose@gmail.com" target="_self"><i class="socicon icon material-icons icon--xs">email</i></a></li>
+                                <li><a href="https://www.linkedin.com/in/jordanspencerfisher/" target="_self"><i class="socicon icon socicon-linkedin icon--xs"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="/assets/old/assets/js/jquery-3.1.1.min.js"></script>
+        <script src="/assets/old/assets/js/parallax.js"></script>
+        <script src="/assets/old/assets/js/smooth-scroll.min.js"></script>
+        <script src="/assets/old/assets/js/scripts.js"></script>
+
+    </body>
+
+</html>

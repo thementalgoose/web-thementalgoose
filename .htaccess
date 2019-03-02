@@ -1,6 +1,0 @@
-RewriteEngine on
-RewriteBase /
-
-RedirectMatch 404 /\.
-
-SetEnv APP_ROOT_PATH /var/www/jordanfisher.me
