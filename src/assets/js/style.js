@@ -189,13 +189,11 @@ $(document).ready(function(){
       var aChild = navChildren[i];
       var ahref = $(aChild).attr('href');
       if (ahref == undefined || ahref == null) {
-        console.log("Blog link de-activated");
       }
       else {
         aArray.push(ahref);
       }
   }
-  console.log(aArray);
   $(window).scroll(function() {
       var windowPos = $(window).scrollTop();
       var windowHeight = $(window).height();
