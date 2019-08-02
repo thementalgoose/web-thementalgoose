@@ -78,24 +78,24 @@ section#footer {
   background-color: #111318;
 }
 .background-primary {
-  background: #D500F9;
+  background: #9B287B;
   padding-left: 10px;
   padding-right: 10px;
 }
 .backround-secondary-dull {
-  background: #01c1c4;
+  background: #7692FF;
 }
 .text-faded {
   color: #818189;
 }
 
 .primary {
-  color: #D500F9;
+  color: #9B287B;
   font-weight: bold;
 }
 
 .secondary {
-  color: #01c1c4;
+  color: #7692FF;
   font-weight: bold;
 }
 
@@ -133,6 +133,48 @@ section#footer {
   padding: 10px;
 }
 
+.item-1 { 
+  background: #f27474 !important;
+}
+.item-2 { 
+  background: #f2c474 !important;
+}
+.item-3 { 
+  background: #a6f274 !important;
+}
+.item-4 { 
+  background: #74f294 !important;
+}
+.item-5 { 
+  background: #44e2ec !important;
+}
+.item-6 { 
+  background: #74a4f2 !important;
+}
+.item-7 { 
+  background: #8774f2 !important;
+}
+.item-8 { 
+  background: #c474f2 !important;
+}
+.item-9 { 
+  background: #f274ee !important;
+}
+.item-10 { 
+  background: #f2749e !important;
+}
+.item-a { 
+  color: #f2c474;
+}
+.item-b { 
+  color: #f2749e;
+}
+.item-c { 
+  color: #74a4f2;
+}
+.item-d { 
+  color: #c474f2;
+}
 /**
             FLEX BOX METHODS
  */
@@ -191,7 +233,7 @@ section#footer {
   max-height: 100px;
   padding: 10px;
   border-radius: 50vh;
-  background: #01c1c4;
+  background: #7692FF;
 }
 .flex-skill-item-large { 
   padding: 5px;
@@ -210,7 +252,7 @@ section#footer {
   max-height: 100px;
   padding: 10px;
   border-radius: 50vh;
-  background: #01c1c4;
+  background: #7692FF;
 }
 .flex-skill-item h3 {
   margin-top: 20px;
@@ -219,7 +261,7 @@ section#footer {
   margin-top: 10px;
 }
 .flex-skill-item img:hover {
-  background: #01c1c4;
+  background: #7692FF;
 }
 
 .flex-projects {
@@ -306,7 +348,7 @@ section#footer {
   font-style: bold;
 }
 .flex-project-item .overlay .bottom a:hover {
-  background: #01c1c4;
+  background: #7692FF;
   color: black;
   font-weight: bold;
   border: solid 2px black;
@@ -416,10 +458,10 @@ section#footer {
   padding: 10px 30px 10px 30px;
   transition: 0.2s;
   border: 2px solid white;
-  background: #01c1c4;
+  background: #7692FF;
 }
 .button-secondary:hover {
-  background: #01c1c4;
+  background: #7692FF;
   color: white;
 }
 
@@ -430,7 +472,7 @@ section#footer {
   max-width: 150px;
   max-height: 150px;
   border-radius: 50vh;
-  background: #01c1c4;
+  background: #7692FF;
   margin-bottom: 30px;
 }
 
@@ -444,7 +486,7 @@ section#footer {
 }
 .bar {
   height: 30px;
-  background: #01c1c4;
+  background: #7692FF;
 }
 .bar-text {
   line-height: 30px;
@@ -486,7 +528,7 @@ section#footer {
   transition: 0.2s;
 }
 .link-box:hover {
-  background: #01c1c4;
+  background: #7692FF;
   color: white;
 }
 .link-box-no-background {
@@ -582,7 +624,7 @@ section#footer {
   background: transparent;
 }
 .link-button:hover {
-  background: #01c1c4;
+  background: #7692FF;
   opacity: 1.0;
 }
 
@@ -593,7 +635,7 @@ section#footer {
             HIGHLIGHT LINK
  */
 #top-menu li.active a {
-  color: #01c1c4;
+  color: #7692FF;
 }
 
 
