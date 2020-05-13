@@ -143,7 +143,7 @@ section#footer {
   background: #a6f274 !important;
 }
 .item-4 { 
-  background: #74f294 !important;
+  background: #509762 !important;
 }
 .item-5 { 
   background: #44e2ec !important;
@@ -233,7 +233,7 @@ section#footer {
   max-height: 100px;
   padding: 10px;
   border-radius: 50vh;
-  background: #7692FF;
+  /* background: #7692FF; */
 }
 .flex-skill-item-large { 
   padding: 5px;
@@ -252,12 +252,18 @@ section#footer {
   max-height: 100px;
   padding: 10px;
   border-radius: 50vh;
-  background: #7692FF;
+  /* background: #7692FF; */
 }
 .flex-skill-item h3 {
   margin-top: 20px;
 }
+.flex-skill-item-large h3 {
+  margin-top: 20px;
+}
 .flex-skill-item p {
+  margin-top: 10px;
+}
+.flex-skill-item-large p {
   margin-top: 10px;
 }
 .flex-skill-item img:hover {

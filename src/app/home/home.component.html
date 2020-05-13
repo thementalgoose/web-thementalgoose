@@ -31,7 +31,7 @@
   <div class="flex-container height-100-percent">
     <div class="flex-centered-item text-white">
       <h1>Hi! I'm <span class="primary">Jordan Fisher</span>,<br/>
-          I'm a<span class="element">n Android App Developer</span></h1>
+          <span class="element">I'm an Android App Developer</span></h1>
       <br/><br/>
       <h2><a href="#about" class="link-box-no-background"><i class="icon-move-without-background fas fa-angle-double-down"></i></a></h2>
     </div>
@@ -81,89 +81,14 @@
   <div class="spacer-5"></div>
   <div class="container">
     <div class="flex-container flex-skills">
-      <div class="flex-skill-item-large animated" id="skill-android" data-delay="0">
-        <img class="item-1" src="/assets/img/icon-android-white.png">
-        <h3>Android + Kotlin</h3>
-        <p><span class="primary">7 years</span> (10+ projects)</p>
-        <p>
-          <a class="skill-click" href="https://realm.io/">Realm</a>, 
-          <a class="skill-click" href="https://square.github.io/retrofit/">Retrofit</a>, 
-          <a class="skill-click" href="https://github.com/bumptech/glide">Glide</a>, 
-          <a class="skill-click" href="https://developer.android.com/topic/libraries/architecture/room">ROOM</a>, 
-          <a class="skill-click" href="https://firebase.google.com/docs/firestore/">Firebase (Firestore)</a>, 
-          <a class="skill-click" href="https://academy.realm.io/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/">MVVM and MVC architecture + Repo pattern</a>, 
-          activity / fragment lifecycles, 
-          android kotlin extensions, 
-          etc..</p>
-      </div>
-      <div class="flex-skill-item-large animated" id="skill-java" data-delay="50">
-        <img class="item-6" src="/assets/img/icon-java-white.png">
-        <h3>Java</h3>
-        <p><span class="primary">7+ years</span> (20+ projects)</p>
-        <p>
-          Android, 
-          JSP, 
-          Servlets, 
-          Crypto, 
-          JARs, 
-          Coroutines, 
-          <a class="skill-click" href="https://developer.android.com/topic/libraries/data-binding/">Data binding</a>, 
-          <a class="skill-click" href="https://github.com/ReactiveX/RxJava">RxJava2</a>,
-          Observable sequences</p>
-      </div>
-      <div class="flex-skill-item animated" id="skill-mean" data-delay="100">
-        <img class="item-3" src="/assets/img/icon-rx-white.png">
-        <h3>ReactiveX</h3>
-        <p><span class="primary">2+ years</span> (6 projects)</p>
-        <p>
-          <a class="skill-click" href="https://github.com/ReactiveX/RxJava">RxJava3</a> + 
-          <a class="skill-click" href="https://square.github.io/retrofit/">Retrofit</a> + 
-          <a class="skill-click" href="https://realm.io/">Realm</a> stack, 
-          Reactive style programming with MVVM architecture. Observables, 
-          Subjects, 
-          Disposables </p>
-      </div>
-      <div class="flex-skill-item animated" id="skill-firebase" data-delay="150">
-        <img class="item-9" src="/assets/img/icon-firebase-white.png">
-        <h3>Firebase</h3>
-        <p><span class="primary">1 year</span> (6 projects)</p><p>Android / iOS / Web (Angular6) integration using <a class="skill-click" href="https://firebase.google.com/docs/firestore/">Firestore</a> + Functions + Hosting</p>
-      </div>
-      <div class="flex-skill-item animated" id="skill-csharp" data-delay="200">
-        <img class="item-8" src="/assets/img/icon-swift-white.png">
-        <h3>Swift</h3>
-        <p><span class="primary">4 months</span> (2 projects)</p><p>Swift 4.2, 
-          Cocoa pods, 
-          Storyboards with Autolayout + constraints, 
-          MVVM architecture with <a class="skill-click" href="https://github.com/ReactiveX/RxSwift">RxSwift</a> + <a href="https://github.com/RxSwiftCommunity/RxDataSources">RxDataSources</a>, 
-        </p>
-      </div>
-      <div class="flex-skill-item animated" id="skill-git" data-delay="250">
-        <img class="item-5" src="/assets/img/icon-git-white.png">
-        <h3>Git</h3>
-        <p><span class="primary">5+ years</span> (every project)</p><p>Travis CI for Docker (Github) - Bitbucket Pipelines for automated builds (including <a href="https://travis-ci.org/thementalgoose/jsf-website">this project!</a>)</p>
-      </div>
-      <div class="flex-skill-item animated" id="skill-azure" data-delay="300">
-        <img class="item-7" src="/assets/img/icon-flutter-white.png">
-        <h3>Flutter</h3>
-        <p><span class="primary">6+ months</span> (0.5+ projects)</p><p>Material + Cupertino Widgets, SQFLite, Firebase integration</p>
-      </div>
-      <div class="flex-skill-item animated" id="skill-spring" data-delay="350">
-        <img class="item-2" src="/assets/img/icon-spring-white.png">
-        <h3>Spring IO</h3>
-        <p><span class="primary">1.5+ years</span> (3 projects)</p><p>Complete Web Apps using Gradle, 
-          Hibernate, 
-          Cucumber, 
-          Travis CI</p>
-      </div>
-      <div class="flex-skill-item animated" id="skill-gradle" data-delay="400">
-        <img class="item-10" src="/assets/img/icon-gradle-white.png">
-        <h3>Gradle</h3>
-        <p><span class="primary">4+ years</span> (10+ projects)</p><p>Automated tasks and dependency management with Gradle + Travis CI + Bitbucker Pipelines</p>
-      </div>
-      <div class="flex-skill-item animated" id="skill-python" data-delay="450">
-        <img class="item-4" src="/assets/img/icon-python-white.png">
-        <h3>Python</h3>
-        <p><span class="primary">3 years</span> (20+ scripts)</p><p>Scripting Language of Choice</p>
+      <div *ngFor="let skill of skills" 
+        [class.flex-skill-item-large]="skill.type == 'large'"
+        [class.flex-skill-item]="skill.type == 'regular'"
+        class="animated">
+        <img [ngStyle]="{'background-color': skill.backgroundColor}" src="{{skill.imageUrl}}"/>
+        <h3>{{skill.name}}</h3>
+        <p><span class="primary">{{skill.subtitle}}</span></p>
+        <p [innerHtml]="skill.description"></p>
       </div>
     </div>
   </div>
@@ -337,120 +262,32 @@
   <div class="spacer-5"></div>
 </section>
 
+
+
 <section id="experience" class="background-light">
   <h1 id="education-title" class="text-center animated">Experience</h1>
   <hr id="education-break" class="animated" />
   <div class="container cd-container" id="cd-timeline">
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-item text-center animated" id="experience-roller-2-icon">
+    <div *ngFor="let ex of experience" class="cd-timeline-block">
+      <div class="cd-timeline-img cd-item text-center animated">
         <div class="cd-timeline-icon">
-          <i class="fas fa-code-branch"></i>
+          <i [class.fa-code-branch]="ex.type == 'work'" [class.fa-graduation-cap]="ex.type == 'education'" class="fas"></i>
         </div>
       </div>
       <div class="cd-timeline-content">
-        <div class="animated" id="experience-roller-2">
-          <h3 class="primary">Mobile Software Engineer</h3>
-          <h2><a href="https://www.capitalone.co.uk/">Capital One <i class="icon-rotate fas fa-link"></i></a></h2>
-          <p>Developing native android applications and APIs to integrate into cloud solutions</p>
-          <p>Gaining experience on how large scale production apps are managed and deployed</p>
+        <div class="animated">
+          <h3 class="primary">{{ex.name}}</h3>
+          <h2><a href="{{ex.placeUrl}}">{{ex.place}} <i class="icon-rotate fas fa-link"></i></a></h2>
+          <div [innerHtml]="ex.description"></div>
         </div>
-        <span class="cd-date animated" id="experience-roller-2-date">Jan 2020 - Current</span>
-      </div>
-    </div>
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-item text-center animated" id="experience-roller-2-icon">
-        <div class="cd-timeline-icon">
-          <i class="fas fa-code-branch"></i>
-        </div>
-      </div>
-      <div class="cd-timeline-content">
-        <div class="animated" id="experience-roller-2">
-          <h3 class="primary">Software Developer</h3>
-          <h2><a href="https://nuom.co.uk">Nuom Agency <i class="icon-rotate fas fa-link"></i></a></h2>
-          <p>General Software Developer for Nuom Agency, contributring to a variety of different apps and technologies</p>
-          <p>Apps built fully in Kotlin, using Repo + MVVM architecture / RxJava3 / Databinding. Use Realm + Retrofit + RxJava3 for reactive flow of data throughout apps. Apps built using MVVM + Repo pattern, including continuous deployment pipeline with Bitbucket / AppCenter / Travis CI</p>
-          <p>Written Firestore-based web + android + iOS app. Use of firebase functions, auth, hosting, storage, etc.</p>
-          <p>Built Android-based SDK to manage backend communication with cloud systems, used to support multiple apps for clients</p>
-          <p>Contributor to iOS projects using Swift 4, MVVM architecture / RxSwift / RxDataSources, Web projects using Angular 6 / MEAN stack and integration with Firebase</p>
-          <p>Experience with Google Tag Manager and Craft websites</p>
-        </div>
-        <span class="cd-date animated" id="experience-roller-2-date">Oct 2017 - Jan 2020</span>
-      </div>
-    </div>
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-item text-center animated" id="experience-roller-1-icon">
-        <div class="cd-timeline-icon">
-          <i class="fas fa-code-branch"></i>
-        </div>
-      </div>
-      <div class="cd-timeline-content">
-        <div class="animated" id="experience-roller-1">
-          <h3 class="primary">Android App Developer</h3>
-          <h2><a href="https://rolleragency.co.uk">Roller Agency <i class="icon-rotate fas fa-link"></i></a></h2>
-          <p>Experience in projects using Realm, Retrofit, Glide, ROOM, Firebase, LibGDX (mobile game), most of which are deployed on the app store.</p>
-          <p>Experience in MVC and MVVM architectures</p>
-          <p>5+ apps developed during my time, most of which are on the play store</p>
-          <p>Co-authored, and contributor to design and implementation of large scale Android-based "SDK" project, whcih streamlined custom app development by handling backend services and communication. Offered guidance and support on a consultancy basis</p>
-        </div>
-        <span class="cd-date animated" id="experience-roller-1-date">Jun 2016 - Jun 2017</span>
-      </div>
-    </div>
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-item text-center animated" id="experience-uni-icon">
-        <div class="cd-timeline-icon">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-      </div>
-      <div class="cd-timeline-content">
-        <div class="animated" id="experience-uni">
-          <h3 class="primary">Computer Science Degree</h3>
-          <h2><a href="https://le.ac.uk">University Of Leicester <i class="icon-rotate fas fa-link"></i></a></h2>
-          <p>BSc Degree, <strong>1st Class</strong> (86% overall, with year in industry)</p>  
-          <p>Some of the modules taken:</p>
-          
-            <ul>
-              <li>Program Design</li>
-              <li>Requirements Engineering</li>
-              <li>Computer Systems</li>
-              <li>Logic and Problem Solving</li>
-              <li>Automata, Language and Computation</li>
-              <li>Operating Systems, Networks and Distributed Systems</li>
-              <li>Functional Programming (haskell)</li>
-              <li>Software Engineering</li>
-              <li>Computational Intelligence for Software Engineering</li>
-              <li>Web Technologies</li>
-              <li>Cryptography and Intenet Security</li>
-            </ul>
-          
-          <p>Full transcript available on request</p>
-        </div>
-        <span class="cd-date animated" id="experience-uni-date">Sept 2014 - Aug 2018</span>
-      </div>
-    </div>
-    <div class="cd-timeline-block">
-      <div class="cd-timeline-img cd-item text-center animated" id="experience-lutterworth-icon">
-        <div class="cd-timeline-icon">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-      </div>
-      <div class="cd-timeline-content">
-        <div class="animated" id="experience-lutterworth">
-          <h3 class="primary">A Levels</h3>
-          <h2><a href="http://www.lutterworthcollege.org.uk/">Lutterworth College <i class="icon-rotate fas fa-link"></i></a></h2>
-          
-            <ul>
-              <li>Mathematics (A2): <strong>A*</strong></li>
-              <li>Physics (A2): <strong>A</strong></li>
-              <li>Computing (A2): <strong>A</strong></li>
-              <li>Chemistry (AS): <strong>A</strong></li>
-            </ul>
-        </div>
-        <span class="cd-date animated" id="experience-lutterworth-date">Sept 2012 - Sept 2014</span>
+        <span class="cd-date animated">{{ex.startDate}} - {{ex.endDate}}</span>
       </div>
     </div>
     <div class="flex-container"></div>
   </div>
 </section>
+
+
 
 <section id="contact" class="background-dark text-center text-white">
   <h1 id="contact-title" class="animated">Fancy a chat?</h1>
@@ -459,6 +296,8 @@
   <p class="text-faded animated padding-10-px" id="contact-message">If there's anything I can help you with feel free start a chat with me through the widget below<br/>Alternatively, download my CV below</p>
   <div class="spacer-10"></div>
 </section>
+
+
 
 <section id="footer" class="background-dark-gray text-center">
   <a href="#page-top"><i class="fas top-of-page background-primary fa-chevron-up"></i></a>
