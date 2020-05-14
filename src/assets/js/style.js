@@ -4,119 +4,6 @@ $(document).ready(function(){
    CONFIGURATION FOR FADING 
    */
 
-  var elements = [{
-    type: "fadeInLeft",
-    items: [
-      "about-title", 
-      "about-break",
-      "about-break-2",
-      "projects-title", 
-      "projects-break",
-      "education-title", 
-      "education-break",
-      "contact-title", 
-      "contact-break",
-      "blog-title", 
-      "blog-break"
-    ]
-  },
-  {
-    type: "jackInTheBox",
-    items: [
-      "about-me", 
-      "about-info", 
-      "about-passion", 
-      "about-future"
-    ]
-  },
-  {
-    type: "fadeIn",
-    items: [
-      "about-me-box", 
-      "about-info-box", 
-      "about-passion-box", 
-      "about-future-box",
-      "contact-message",
-      "profile-download"
-    ]
-  },
-  {
-    type: "fadeIn",
-    items: [
-      "skill-java",
-      "skill-android",
-      "skill-web",
-      "skill-csharp",
-      "skill-mean",
-      "skill-python",
-      "skill-haskell",
-      "skill-spring",
-      "skill-firebase",
-      "skill-java",
-      "skill-gradle",
-      "skill-azure",
-      "skill-git"
-    ]
-  },{
-    type: "fadeIn",
-    items: [
-      "skill-java-bar",
-      "skill-android-bar",
-      "skill-web-bar",
-      "skill-csharp-bar",
-      "skill-mean-bar",
-      "skill-python-bar",
-      "skill-haskell-bar",
-      "skill-spring-bar",
-      "skill-firebase-bar",
-      "skill-java-bar",
-      "skill-gradle-bar",
-      "skill-azure-bar",
-      "skill-git-bar"
-    ]
-  },{
-    type: "fadeIn",
-    items: [
-      "experience-roller-2-icon",
-      "experience-roller-2-date",
-      "experience-roller-1-icon",
-      "experience-roller-1-date",
-      "experience-uni-icon",
-      "experience-uni-date",
-      "experience-lutterworth-icon",
-      "experience-lutterworth-date",
-    ]
-  },{
-    type: "fadeInRight",
-    items: [
-      "experience-roller-2",
-      "experience-uni"
-    ]
-  },{
-    type: "fadeInLeft",
-    items: [
-      "experience-roller-1",
-      "experience-lutterworth"
-    ]
-  }, {
-    type: "fadeIn",
-    items: [
-      "project-gal-app-amiwrong",
-      "project-gal-app-drivingtutor",
-      "project-gal-app-cmai",
-      "project-gal-app-schedule",
-      "project-gal-web-old",
-      "project-gal-web-j21",
-      "project-gal-web-flatfinder",
-      "project-gal-web-bookmark",
-      "project-gal-space-invaders",
-      "project-gal-snake",
-      "project-gal-java3d",
-      "project-gal-spacegame",
-      "project-gal-chat-server"
-    ]
-  }];
-
   /**
    LOAD MY AGE
    */
@@ -133,11 +20,6 @@ $(document).ready(function(){
    PROJECT
    */
   // var Shuffle = window.Shuffle;
-
-  // window.shuffleInstance = new Shuffle(document.querySelector('.my-grid-with-images'), {
-  //   itemSelector: '.js-item',
-  //   sizer: '.my-sizer-element',
-  // });
 
   // Select all links with hashes
   $('a[href*="#"]')
@@ -211,31 +93,10 @@ $(document).ready(function(){
           }
       }
   });
-
-  for (var i = 0; i < elements.length; i++) {
-    configureEnterance(elements[i].items, elements[i].type);
-  }
 });
 
 function calculateAge(birthday) { // birthday is a date
   var ageDifMs = Date.now() - birthday.getTime();
   var ageDate = new Date(ageDifMs); // miliseconds from epoch
   return Math.abs(ageDate.getUTCFullYear() - 1970);
-}
-
-function configureEnterance(array, importClass) {
-  for (var i = 0; i < array.length; i++) {
-    $('#' + array[i]).css('opacity', 0);
-    $("#" + array[i]).waypoint(function() {
-      var delay = $(this.element).attr('data-delay');
-
-      if (!delay || delay == undefined || delay == null) {
-        delay = 0;
-      }
-      var id = this.element.id
-      setTimeout(function() {
-        $("#" + id).addClass(importClass);
-      }, delay);
-    }, { offset: '100%'});
-  }
 }
