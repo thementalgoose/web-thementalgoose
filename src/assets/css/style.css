@@ -119,6 +119,13 @@ section#footer {
   font-family: 'Raleway';
 }
 
+.at-bottom { 
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  right: 0%;
+}
+
 /**
             UTILITY SPACERS 
  */

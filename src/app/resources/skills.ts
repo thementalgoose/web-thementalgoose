@@ -33,6 +33,7 @@ export const allSkills: () => SkillModel[] = () => [
         .withDescription(`
             <p>
                 Android, 
+                JUnit 5 + 4,
                 JSP, 
                 Servlets, 
                 Crypto, 

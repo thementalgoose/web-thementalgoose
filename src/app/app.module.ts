@@ -9,6 +9,7 @@ import { FileOpenerComponent } from './file-opener/file-opener.component';
 import { TransmissionPrivacyPolicyComponent } from './transmission/dt-privacy-policy/transmission-privacy-policy.component';
 import { HourGlassPrivacyPolicyComponent } from './hour-glass/privacy-policy/privacy-policy.component';
 import { FlashbackPrivacyPolicyComponent } from './flashback/privacy-policy/privacy-policy.component';
+import { LinksComponent } from './home/links/links.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FlashbackPrivacyPolicyComponent } from './flashback/privacy-policy/priv
     TransmissionPrivacyPolicyComponent,
     HourGlassPrivacyPolicyComponent,
     FlashbackPrivacyPolicyComponent,
-    FileOpenerComponent
+    FileOpenerComponent,
+    LinksComponent
   ],
   imports: [
     BrowserModule,
