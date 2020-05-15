@@ -1,13 +1,13 @@
 export const allProjects: () => ProjectModel[] = () => [
-    // ProjectModel.item()
-    //     .withName("Flashback")
-    //     .withSubtitle("Formula 1 statistics app")
-    //     .withCategory("Android App")
-    //     .withBackgroundImage("/assets/img/gal-app-flashback.png")
-    //     .withButton({
-    //         label: "App Store",
-    //         url: "https://play.google.com/store/apps/details?id=tmg.flashback"
-    //     }),
+    ProjectModel.item()
+        .withName("Flashback")
+        .withSubtitle("Formula 1 statistics app")
+        .withCategory("Android App")
+        .withBackgroundImage("/assets/img/gal-app-flashback.png")
+        .withButton({
+            label: "App Store",
+            url: "https://play.google.com/store/apps/details?id=tmg.flashback"
+        }),
 
     ProjectModel.item()
         .withName("Hour Glass")
