@@ -4,6 +4,7 @@ import * as particlejs from 'particlesjs';
 import { allExperience, ExperienceModel } from '../resources/experience';
 import { SkillModel, allSkills } from '../resources/skills';
 import { allProjects, ProjectModel } from '../resources/projects';
+import { AngularFireAnalytics } from '@angular/fire/analytics';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,10 @@ export class HomeComponent implements OnInit {
   public skills: SkillModel[] = allSkills();
   public projects: ProjectModel[] = allProjects();
 
-  constructor() { }
+  constructor(private fire: AngularFireAnalytics) {
+    fire.setAnalyticsCollectionEnabled(true);
+    fire.logEvent("Startup");
+  }
 
   ngOnInit() {
     
