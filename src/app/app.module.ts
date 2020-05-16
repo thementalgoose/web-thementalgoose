@@ -10,6 +10,9 @@ import { TransmissionPrivacyPolicyComponent } from './transmission/dt-privacy-po
 import { HourGlassPrivacyPolicyComponent } from './hour-glass/privacy-policy/privacy-policy.component';
 import { FlashbackPrivacyPolicyComponent } from './flashback/privacy-policy/privacy-policy.component';
 import { LinksComponent } from './home/links/links.component';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { LinksComponent } from './home/links/links.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
