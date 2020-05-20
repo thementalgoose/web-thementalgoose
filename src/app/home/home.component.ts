@@ -5,6 +5,7 @@ import { allExperience, ExperienceModel } from '../resources/experience';
 import { SkillModel, allSkills } from '../resources/skills';
 import { allProjects, ProjectModel } from '../resources/projects';
 import { AngularFireAnalytics } from '@angular/fire/analytics';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -18,8 +19,10 @@ export class HomeComponent implements OnInit {
   public projects: ProjectModel[] = allProjects();
 
   constructor(private fire: AngularFireAnalytics) {
-    fire.setAnalyticsCollectionEnabled(true);
-    fire.logEvent("Startup");
+    if (environment.production) { 
+      fire.setAnalyticsCollectionEnabled(true);
+      fire.logEvent("Startup");
+    }
   }
 
   ngOnInit() {
