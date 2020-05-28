@@ -25,10 +25,6 @@ export const allProjects: () => ProjectModel[] = () => [
         .withCategory("Android App")
         .withBackgroundImage("/assets/img/gal-app-transmission.png")
         .withButton({
-            label: "Github",
-            url: "https://github.com/thementalgoose/android-transmission"
-        })
-        .withButton({
             label: "App store",
             url: "https://play.google.com/store/apps/details?id=tmg.drivingtutor"
         }),
