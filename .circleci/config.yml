@@ -1,0 +1,40 @@
+version: 2
+
+jobs:
+  deploy:
+    docker:
+      - image: 'circleci/node:10'
+    working_directory: ~/repo
+
+    filters:
+      branches:
+        only:
+          - master
+    
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - 'jf-v1-dependencies-{{ checksum "package.json" }}'
+            - jf-v1-dependencies-
+      - run: 'npm install'
+      - save_cache:
+          paths:
+            - node_modules
+          key: 'jf-v1-dependencies-{{ checksum "package.json" }}'
+      - run:
+          name: 'Build Project'
+          command: 'npm run build'
+      - run:
+          name: 'Deploy to Firebase Hosting'
+          command: './node_modules/.bin/firebase deploy --project jsf-website --only hosting --token=$FIREBASE_TOKEN '
+
+workflows:
+  version: 2
+  flow:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
+      
