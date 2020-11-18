@@ -29,7 +29,7 @@ jobs:
           paths:
             - node_modules
           key: 'jf-v1-dependencies-{{ checksum "package.json" }}'
-      - run: *decode_firebase
+      - *decode_firebase
       - run:
           name: 'Build Project'
           command: 'npm run build'
