@@ -1,5 +1,12 @@
 version: 2
 
+references: 
+  decode_firebase: &decode_firebase
+    run:
+      name: 'Decode Firebase environment configuration'
+      command: |
+        echo $ENVIRONMENT_PROD | base64 -d >> src/environments/environment.prod.ts
+
 jobs:
   deploy:
     docker:
@@ -22,6 +29,7 @@ jobs:
           paths:
             - node_modules
           key: 'jf-v1-dependencies-{{ checksum "package.json" }}'
+      - run: *decode_firebase
       - run:
           name: 'Build Project'
           command: 'npm run build'
