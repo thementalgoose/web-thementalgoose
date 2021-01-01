@@ -6,19 +6,24 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      {
+        "source": "play.jordanfisher.io",
+        "destination": "https://play.google.com/store/apps/developer?id=Jordan+Fisher",
+        "type": 301
+      },
+      {
+        "source": "github.jordanfisher.io",
+        "destination": "https://github.com/thementalgoose",
+        "type": 301
+      },
+      {
+        "source": "linkedin.jordanfisher.io",
+        "destination": "https://linkedin.com/in/jordanspencerfisher",
+        "type": 301
+      }
+    ],
     "rewrites": [
-      {
-        "source": "play.jordanfisher.io/**",
-        "destination": "https://play.google.com/store/apps/developer?id=Jordan+Fisher"
-      },
-      {
-        "source": "github.jordanfisher.io/**",
-        "destination": "https://github.com/thementalgoose"
-      },
-      {
-        "source": "linkedin.jordanfisher.io/**",
-        "destination": "https://linkedin.com/in/jordanspencerfisher"
-      },
       {
         "source": "**",
         "destination": "/index.html"
