@@ -1,5 +1,5 @@
 # jordanfisher.io 
 
-Current CV website for me, hosted at [jordanfisher.io](https://jordanfisher.io)
+![main](https://github.com/thementalgoose/web-jordanfisher/workflows/Main/badge.svg)
 
-Built with Github Actions
+Current CV website for me, hosted at [jordanfisher.io](https://jordanfisher.io)
