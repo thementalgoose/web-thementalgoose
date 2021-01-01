@@ -7,6 +7,9 @@ import { allProjects, ProjectModel } from '../resources/projects';
 import { AngularFireAnalytics } from '@angular/fire/analytics';
 import { environment } from 'src/environments/environment';
 
+declare function require(moduleName: string): any;
+const { version: appVersion } = require('../../../package.json')
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,6 +21,8 @@ export class HomeComponent implements OnInit {
   public skills: SkillModel[] = allSkills();
   public projects: ProjectModel[] = allProjects();
 
+  public version = appVersion
+
   constructor(private fire: AngularFireAnalytics) {
     if (environment.production) { 
       fire.setAnalyticsCollectionEnabled(true);
@@ -26,7 +31,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+    console.log(this.version);
   }
 
 }
