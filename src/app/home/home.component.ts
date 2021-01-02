@@ -17,10 +17,6 @@ const { version: appVersion } = require('../../../package.json')
 })
 export class HomeComponent implements OnInit {
 
-  public experience: ExperienceModel[] = allExperience();
-  public skills: SkillModel[] = allSkills();
-  public projects: ProjectModel[] = allProjects();
-
   public version = appVersion
 
   constructor(private fire: AngularFireAnalytics) {

@@ -1,0 +1,22 @@
+<section id="projects" class="text-center background-gray">
+  <h1 id="projects-title" class="animated">Projects</h1>
+  <hr id="projects-break" class="animated" />
+  <div class="spacer-5"></div>
+  <div class="container">
+    <div class="flex-container flex-projects text-center">
+      <div *ngFor="let x of projects" class="flex-project-item animated" [ngStyle]="{'background-image': 'url(' + x.backgroundImage + ')'}">
+        <div class="overlay">
+          <div class="top text-center">
+            <h4><strong>{{x.name}}</strong></h4>
+            <p>{{x.subtitle}}<br/><strong class="primary">{{x.category}}</strong></p>
+          </div>
+          <div class="bottom text-center">
+            <a *ngFor="let button of x.buttons" target="_blank" href="{{button.url}}">{{button.label}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer-5"></div>
+</section>
+  

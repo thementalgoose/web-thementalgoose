@@ -42,107 +42,14 @@
   </div>
 </header>
 
-<section id="about" class="background-light">
-  <h1 id="about-title" class="animated text-center">About</h1>
-  <hr id="about-break" class="animated" />
-  <div class="spacer-5"></div>
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12 padding-10-px">
-        <h1 class="animated secondary item-a" id="about-me"><i class="fas fa-user-circle"></i></h1>
-        <div id="about-me-box" class="animated padding-10-px">
-          <h3>Me</h3>
-          <p>My name is Jordan, i'm <span id="age">XX</span> years old and I live in England
-          </p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 padding-10-px">
-        <h1 class="animated secondary item-b" id="about-passion" data-delay="200"><i class="fas fa-heart"></i></h1>
-        <div id="about-passion-box" class="animated padding-10-px" data-delay="200">
-          <h3>Passion</h3>
-          <p>I love to build software solutions and mobile apps, alongside F1, skiing, snowboarding and ice skating</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 padding-10-px">
-        <h1 class="animated secondary item-c" id="about-info" data-delay="400"><i class="fas fa-pause-circle"></i></h1>
-        <div id="about-info-box" class="animated padding-10-px" data-delay="400">
-          <h3>Currently</h3>
-          <p>I am a Mobile Software Engineer for <br/><strong><a href="https://capitalone.co.uk">Capital One <i class="icon-rotate fas fa-link"></i></a></strong></p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 padding-10-px">
-        <h1 class="animated secondary item-d" id="about-future" data-delay="600"><i class="fas fa-chevron-circle-right"></i></h1>
-        <div id="about-future-box" class="animated padding-10-px" data-delay="600">
-          <h3>Future</h3>
-          <p>Get better and better at Android development, but who knows!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr id="about-break-2" class="animated" />
-  <div class="spacer-5"></div>
-  <div class="container">
-    <div class="flex-container flex-skills">
-      <div *ngFor="let skill of skills" 
-        [class.flex-skill-item-large]="skill.type == 'large'"
-        [class.flex-skill-item]="skill.type == 'regular'"
-        class="animated">
-        <img [ngStyle]="{'background-color': skill.backgroundColor}" src="{{skill.imageUrl}}"/>
-        <h3>{{skill.name}}</h3>
-        <p><span class="primary">{{skill.subtitle}}</span></p>
-        <p [innerHtml]="skill.description"></p>
-      </div>
-    </div>
-  </div>
-  <div class="spacer-5"></div>
-</section>
 
-<section id="projects" class="text-center background-gray">
-  <h1 id="projects-title" class="animated">Projects</h1>
-  <hr id="projects-break" class="animated" />
-  <div class="spacer-5"></div>
-  <div class="container">
-    <div class="flex-container flex-projects text-center">
-      <div *ngFor="let x of projects" class="flex-project-item animated" [ngStyle]="{'background-image': 'url(' + x.backgroundImage + ')'}">
-        <div class="overlay">
-          <div class="top text-center">
-            <h4><strong>{{x.name}}</strong></h4>
-            <p>{{x.subtitle}}<br/><strong class="primary">{{x.category}}</strong></p>
-          </div>
-          <div class="bottom text-center">
-            <a *ngFor="let button of x.buttons" target="_blank" href="{{button.url}}">{{button.label}}</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="spacer-5"></div>
-</section>
+<app-about></app-about>
+
+<app-projects></app-projects>
 
 
 
-<section id="experience" class="background-light">
-  <h1 id="education-title" class="text-center animated">Experience</h1>
-  <hr id="education-break" class="animated" />
-  <div class="container cd-container" id="cd-timeline">
-    <div *ngFor="let ex of experience" class="cd-timeline-block">
-      <div class="cd-timeline-img cd-item text-center animated">
-        <div class="cd-timeline-icon">
-          <i [class.fa-code-branch]="ex.type == 'work'" [class.fa-graduation-cap]="ex.type == 'education'" class="fas"></i>
-        </div>
-      </div>
-      <div class="cd-timeline-content">
-        <div class="animated">
-          <h3 class="primary">{{ex.name}}</h3>
-          <h2><a href="{{ex.placeUrl}}">{{ex.place}} <i class="icon-rotate fas fa-link"></i></a></h2>
-          <div [innerHtml]="ex.description"></div>
-        </div>
-        <span class="cd-date animated">{{ex.startDate}} - {{ex.endDate}}</span>
-      </div>
-    </div>
-    <div class="flex-container"></div>
-  </div>
-</section>
+<app-experience></app-experience>
 
 
 

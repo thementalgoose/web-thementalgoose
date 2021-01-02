@@ -1,0 +1,22 @@
+<section id="experience" class="background-light">
+  <h1 id="education-title" class="text-center animated">Experience</h1>
+  <hr id="education-break" class="animated" />
+  <div class="container cd-container" id="cd-timeline">
+    <div *ngFor="let ex of experience" class="cd-timeline-block">
+      <div class="cd-timeline-img cd-item text-center animated">
+        <div class="cd-timeline-icon">
+          <i [class.fa-code-branch]="ex.type == 'work'" [class.fa-graduation-cap]="ex.type == 'education'" class="fas"></i>
+        </div>
+      </div>
+      <div class="cd-timeline-content">
+        <div class="animated">
+          <h3 class="primary">{{ex.name}}</h3>
+          <h2><a href="{{ex.placeUrl}}">{{ex.place}} <i class="icon-rotate fas fa-link"></i></a></h2>
+          <div [innerHtml]="ex.description"></div>
+        </div>
+        <span class="cd-date animated">{{ex.startDate}} - {{ex.endDate}}</span>
+      </div>
+    </div>
+    <div class="flex-container"></div>
+  </div>
+</section>
