@@ -13,6 +13,9 @@ import { LinksComponent } from './home/links/links.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { environment } from 'src/environments/environment';
+import { AboutComponent } from './home/about/about.component';
+import { ProjectsComponent } from './home/projects/projects.component';
+import { ExperienceComponent } from './home/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { environment } from 'src/environments/environment';
     HourGlassPrivacyPolicyComponent,
     FlashbackPrivacyPolicyComponent,
     FileOpenerComponent,
-    LinksComponent
+    LinksComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
