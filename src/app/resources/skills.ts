@@ -12,7 +12,7 @@ export const allSkills: () => SkillModel[] = () => [
                 <a class="skill-click" href="https://firebase.google.com/docs/firestore/">Firebase (Firestore)</a>, 
                 <a class="skill-click" href="https://academy.realm.io/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/">MVVM and MVC architecture + Repo pattern</a>, 
                 activity / fragment lifecycles, 
-                espresso, mockito,
+                espresso, mockito, mockk,
                 kotlin extensions, etc...
             </p>
         `),
@@ -60,11 +60,11 @@ export const allSkills: () => SkillModel[] = () => [
         `),
     SkillModel.regular()
         .withName("Firebase")
-        .withSubtitle("2018 -> 2020")
+        .withSubtitle("2018 -> 2021")
         .withBackgroundColor("/assets/img/icon-firebase-white.png", "#f2c474")
         .withDescription(`
             <p>
-                Multiple projects using <a class="skill-click" href="https://firebase.google.com/docs/firestore/">Firestore</a> + Functions + Hosting in Android / iOS / Web software packages
+                Multiple projects using <a class="skill-click" href="https://firebase.google.com/docs/firestore/">Firestore</a> + Functions + Hosting + Remote Config + Cloud Messaging in Android / iOS / Web software packages.
             </p>
         `),
     SkillModel.regular()
@@ -129,7 +129,7 @@ export const allSkills: () => SkillModel[] = () => [
         .withDescription(`
             <p>
                 Git, SVN, Git flow, 
-                Travis CI github integration
+                Travis CI github integration, CircleCI, Github Actions,
                 Bitbucket pipelines,
                 Jenkins CI, 
                 App Center mobile app distribution
