@@ -21,6 +21,16 @@ export const amiwrong = new ProjectItem(
             type: 'web',
             text: 'Hack24',
             url: 'https://hack24.co.uk'
+        },
+        {
+            type: 'person',
+            text: 'Sebastian Ghetu',
+            url: 'https://ghetu.net'
+        },
+        {
+            type: 'person',
+            text: 'Jono Alford',
+            url: 'https://uk.linkedin.com/in/jonoalford'
         }
     ]
 )

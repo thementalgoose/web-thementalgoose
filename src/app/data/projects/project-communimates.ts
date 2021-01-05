@@ -13,17 +13,17 @@ export const communimates = new ProjectItem(
             url: 'https://www.youtube.com/watch?v=bGU1Q54qHow'
         },
         {
-            type: 'web',
+            type: 'person',
             text: 'David Van Zyl',
             url: 'https://davidvanzyl.io/'
         },
         {
-            type: 'web',
+            type: 'person',
             text: 'Sebastian Ghetu',
             url: 'https://ghetu.net'
         },
         {
-            type: 'web',
+            type: 'person',
             text: 'Jono Alford',
             url: 'https://uk.linkedin.com/in/jonoalford'
         }

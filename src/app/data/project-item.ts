@@ -4,7 +4,7 @@ export class ProjectItem {
     public subtitle: string;
     public list: string[];
     public links: {
-        type: 'google' | 'web' | 'github' | 'youtube',
+        type: 'google' | 'web' | 'github' | 'youtube' | 'person',
         text: string,
         url: string
     }[];
@@ -15,7 +15,7 @@ export class ProjectItem {
         subtitle: string,
         list: string[],
         links: {
-            type: 'google' | 'web' | 'github' | 'youtube',
+            type: 'google' | 'web' | 'github' | 'youtube' | 'person',
             text: string,
             url: string
         }[]
