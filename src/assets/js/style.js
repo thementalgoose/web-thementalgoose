@@ -4,23 +4,6 @@ $(document).ready(function(){
    CONFIGURATION FOR FADING 
    */
 
-  /**
-   LOAD MY AGE
-   */
-  var date = new Date();
-  date.setFullYear(1995, 9, 12);
-  $("#age").html(calculateAge(date));
-
-  /**
-   CURRENT YEAR
-   */
-  $("#year").html((new Date()).getFullYear());
-
-  /**
-   PROJECT
-   */
-  // var Shuffle = window.Shuffle;
-
   // Select all links with hashes
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -94,9 +77,3 @@ $(document).ready(function(){
       }
   });
 });
-
-function calculateAge(birthday) { // birthday is a date
-  var ageDifMs = Date.now() - birthday.getTime();
-  var ageDate = new Date(ageDifMs); // miliseconds from epoch
-  return Math.abs(ageDate.getUTCFullYear() - 1970);
-}

@@ -4,16 +4,25 @@
   <div class="spacer-5"></div>
   <div class="container">
     <div class="flex-container flex-projects text-center">
-      <div *ngFor="let x of projects" class="flex-project-item animated" [ngStyle]="{'background-image': 'url(' + x.backgroundImage + ')'}">
-        <div class="overlay">
-          <div class="top text-center">
-            <h4><strong>{{x.name}}</strong></h4>
-            <p>{{x.subtitle}}<br/><strong class="primary">{{x.category}}</strong></p>
-          </div>
-          <div class="bottom text-center">
-            <a *ngFor="let button of x.buttons" target="_blank" href="{{button.url}}">{{button.label}}</a>
-          </div>
+      <div *ngFor="let model of allProjects" class="project-item" >
+        <div class="title">
+          <h2>{{model.title}}</h2>
         </div>
+        <hr class="thin" />
+        <div class="project-details">
+          <img src="{{model.logo}}" class="image"/>
+          <div class="text">
+            <p [innerHtml]="model.subtitle"></p>
+            <ul *ngIf="model.list">
+              <li *ngFor="let point of model.list">{{point}}</li>
+            </ul>
+            <div class="inline" *ngIf="model.links">
+              <a *ngFor="let link of model.links" class="project-link" href="{{link.url}}" target="_blank">
+                <p>{{link.text}} &nbsp;<i class="{{getIcon(link.type)}}"></i></p>
+              </a>
+            </div>
+          </div>
+        </div>  
       </div>
     </div>
   </div>

@@ -1,0 +1,28 @@
+.flex-links {
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.flex-link {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.link-box {
+    padding: 10px;
+    min-width: 80px;
+    min-height: 80px;
+    width: 80px;
+    height: 80px;
+    color: white;
+    transition: 0.2s;
+}
+.link-box:hover {
+    background: #7692FF;
+    color: white;
+}
+.link-box .icon-move {
+    transition: 0.2s;
+}
+.link-box:hover .icon-move {
+    animation: moving-icon 0.2s;
+}

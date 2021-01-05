@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as particlejs from 'particlesjs';
-import { allExperience, ExperienceModel } from '../resources/experience';
-import { SkillModel, allSkills } from '../resources/skills';
-import { allProjects, ProjectModel } from '../resources/projects';
 import { AngularFireAnalytics } from '@angular/fire/analytics';
 import { environment } from 'src/environments/environment';
 
@@ -17,7 +14,6 @@ const { version: appVersion } = require('../../../package.json')
 })
 export class HomeComponent implements OnInit {
 
-  public version = appVersion
 
   constructor(private fire: AngularFireAnalytics) {
     if (environment.production) { 

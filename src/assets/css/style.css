@@ -31,18 +31,39 @@ h5 {
 h6 {
 
 }
-a {
+
+
+
+
+
+a { 
+  color: #9B287B;
+  font-weight: 300;
   text-decoration: none;
-  color: inherit;
 }
-a:hover {
+a:hover { 
+  color: #9B287B;
+  font-weight: 600;
   text-decoration: none;
-  color: inherit;
 }
+
+
+
+
+
+
 
 hr {
   border: none;
   height: 4px;
+  width: 10vh;
+  /* Set the hr color */
+  color: #1C1E27; /* old IE */
+  background-color: #1C1E27; /* Modern Browsers */
+}
+hr.thin {
+  border: none;
+  height: 2px;
   width: 10vh;
   /* Set the hr color */
   color: #1C1E27; /* old IE */
@@ -385,20 +406,6 @@ section#footer {
   align-content: flex-start;
   flex-wrap: wrap;
 }
-.flex-skill-label {
-
-}
-.flex-skill-bar {
-  flex-grow: 1;
-}
-.flex-links {
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-.flex-link {
-  margin-left: 8px;
-  margin-right: 8px;
-}
 /**
             PRIMARY COLOUR 
  */
@@ -531,43 +538,6 @@ section#footer {
             LINK BOXES
  */
 
-.link-box {
-  padding: 10px;
-  min-width: 80px;
-  min-height: 80px;
-  width: 80px;
-  height: 80px;
-  color: white;
-  transition: 0.2s;
-}
-.link-box:hover {
-  background: #7692FF;
-  color: white;
-}
-.link-box-no-background {
-  padding: 10px;
-  min-width: 80px;
-  min-height: 80px;
-  width: 80px;
-  height: 80px;
-  color: white;
-  transition: 0.2s;
-}
-.link-box-no-background:hover {
-  color: white;
-}
-.link-box .icon-move {
-  transition: 0.2s;
-}
-.link-box:hover .icon-move {
-  animation: moving-icon 0.2s;
-}
-.link-box-no-background .icon-move-without-background {
-  transition: 0.2s;
-}
-.link-box-no-background:hover .icon-move-without-background {
-  animation: moving-icon-no-background 0.2s;
-}
 
 @keyframes moving-icon {
   0% {

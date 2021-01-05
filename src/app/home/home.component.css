@@ -1,0 +1,19 @@
+/* Down arrow */
+.link-box-no-background {
+    padding: 10px;
+    min-width: 80px;
+    min-height: 80px;
+    width: 80px;
+    height: 80px;
+    color: white;
+    transition: 0.2s;
+}
+.link-box-no-background:hover {
+    color: white;
+}
+.link-box-no-background .icon-move-without-background {
+    transition: 0.2s;
+}
+.link-box-no-background:hover .icon-move-without-background {
+    animation: moving-icon-no-background 0.2s;
+}
