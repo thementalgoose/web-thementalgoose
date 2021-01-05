@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { allProjects } from 'src/app/project-item';
+import { allProjects } from 'src/app/data/project-all';
 
 @Component({
   selector: 'app-projects',
@@ -15,4 +15,12 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
+  getIcon(linkType: 'google' | 'web' | 'github' | 'youtube') { 
+    switch (linkType) { 
+        case 'google': return 'fab fa-google-play';
+        case 'web': return 'fab fa-internet-explorer';
+        case 'github': return 'fab fa-github';
+        case 'youtube': return 'fab fa-youtube';
+    }
+  }
 }

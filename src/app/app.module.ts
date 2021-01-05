@@ -14,7 +14,6 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { environment } from 'src/environments/environment';
 import { ProjectsComponent } from './home/projects/projects.component';
-import { ProjectItemComponent } from './home/projects/project-item/project-item.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { ContactComponent } from './home/contact/contact.component';
 
@@ -29,7 +28,6 @@ import { ContactComponent } from './home/contact/contact.component';
     FileOpenerComponent,
     LinksComponent,
     ProjectsComponent,
-    ProjectItemComponent,
     FooterComponent,
     ContactComponent
   ],

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { email, urlGithub, urlLinkedin, urlPlay } from 'src/app/constants';
-import { ProjectItem } from 'src/app/project-item';
+import { ProjectItem } from 'src/app/data/project-item';
 
 @Component({
   selector: 'app-links',
