@@ -3,7 +3,7 @@ import { ProjectItem } from "../project-item";
 export const flashback = new ProjectItem(
     "/assets/img/project-icon-flashback.webp",
     "Flashback",
-    "Flashback is an android app for formula 1 statistics from the history of formula 1, and news from all around the web. ",
+    "Flashback is an android app for formula 1 statistics from the history of formula 1, and news from all around the web.",
     [
         "Race results up to latest race",
         "Race results sync just a few hours after the race finishes",

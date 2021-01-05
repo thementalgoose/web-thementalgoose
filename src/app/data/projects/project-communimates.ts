@@ -1,10 +1,10 @@
 import { ProjectItem } from "../project-item";
 
 export const communimates = new ProjectItem(
-    "/assets/img/project-icon-amiwrong.webp",
-    "Am I Wrong",
-    "Am I Wrong is an android app that Jono Alford, Sebastian Ghetu, David Van Zyl and I developed as part of the Hack24 event in Nottingham. " + 
-    "It allows you to anonymously ask for opinions and crittercisms on the ambiguous decisions you've made. Only once you have voted can you view the comments from people reacting to what you did or didn't do!",
+    "/assets/img/project-icon-communimates.png",
+    "Communimates",
+    "Hack24 2018<br/>Communimates is an android app that Jono Alford, Sebastian Ghetu, David Van Zyl and I developed as part of the Hack24 event in Nottingham in 2018. " + 
+    "It uses a bunch of azure cloud services to intelligently match people to chat based on a sentence from the user and ML determining good matches",
     [],
     [
         {
