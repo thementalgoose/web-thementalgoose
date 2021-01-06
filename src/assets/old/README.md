@@ -1,3 +1,0 @@
-# New Website
-
-Currently WIP
