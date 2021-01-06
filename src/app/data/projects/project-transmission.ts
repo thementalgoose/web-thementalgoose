@@ -1,7 +1,7 @@
 import { ProjectItem } from "../project-item";
 
 export const transmission = new ProjectItem(
-    "/assets/img/project-icon-transmission.webp",
+    "/assets/img/project-icon-transmission.png",
     "Transmission",
     "Transmission is an android app designed as one-stop-shop revision aid in helping you learn to drive in the UK.",
     [

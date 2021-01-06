@@ -1,7 +1,7 @@
 import { ProjectItem } from "../project-item";
 
 export const hourglass = new ProjectItem(
-    "/assets/img/project-icon-hourglass.webp",
+    "/assets/img/project-icon-hourglass.png",
     "HourGlass",
     "HourGlass is an lightweight android app for quickly finding out what a value should be between two dates.",
     [
