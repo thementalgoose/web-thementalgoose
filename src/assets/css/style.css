@@ -37,12 +37,12 @@ h6 {
 
 
 a { 
-  color: #9B287B;
+  color: #06DAE2;
   font-weight: 300;
   text-decoration: none;
 }
 a:hover { 
-  color: #9B287B;
+  color: #06DAE2;
   font-weight: 600;
   text-decoration: none;
 }
@@ -99,24 +99,24 @@ section#footer {
   background-color: #111318;
 }
 .background-primary {
-  background: #9B287B;
+  background: #1D81D7;
   padding-left: 10px;
   padding-right: 10px;
 }
 .backround-secondary-dull {
-  background: #7692FF;
+  background: #1D81D7;
 }
 .text-faded {
   color: #818189;
 }
 
 .primary {
-  color: #9B287B;
+  color: #06DAE2;
   font-weight: bold;
 }
 
 .secondary {
-  color: #7692FF;
+  color: #1D81D7;
   font-weight: bold;
 }
 
@@ -261,7 +261,7 @@ section#footer {
   max-height: 100px;
   padding: 10px;
   border-radius: 50vh;
-  /* background: #7692FF; */
+  /* background: #1D81D7; */
 }
 .flex-skill-item-large { 
   padding: 5px;
@@ -280,7 +280,7 @@ section#footer {
   max-height: 100px;
   padding: 10px;
   border-radius: 50vh;
-  /* background: #7692FF; */
+  /* background: #1D81D7; */
 }
 .flex-skill-item h3 {
   margin-top: 20px;
@@ -295,7 +295,7 @@ section#footer {
   margin-top: 10px;
 }
 .flex-skill-item img:hover {
-  background: #7692FF;
+  background: #1D81D7;
 }
 
 .flex-projects {
@@ -382,7 +382,7 @@ section#footer {
   font-style: bold;
 }
 .flex-project-item .overlay .bottom a:hover {
-  background: #7692FF;
+  background: #1D81D7;
   color: black;
   font-weight: bold;
   border: solid 2px black;
@@ -478,10 +478,10 @@ section#footer {
   padding: 10px 30px 10px 30px;
   transition: 0.2s;
   border: 2px solid white;
-  background: #7692FF;
+  background: #1D81D7;
 }
 .button-secondary:hover {
-  background: #7692FF;
+  background: #1D81D7;
   color: white;
 }
 
@@ -492,7 +492,7 @@ section#footer {
   max-width: 150px;
   max-height: 150px;
   border-radius: 50vh;
-  background: #7692FF;
+  background: #1D81D7;
   margin-bottom: 30px;
 }
 
@@ -506,7 +506,7 @@ section#footer {
 }
 .bar {
   height: 30px;
-  background: #7692FF;
+  background: #1D81D7;
 }
 .bar-text {
   line-height: 30px;
@@ -607,7 +607,7 @@ section#footer {
   background: transparent;
 }
 .link-button:hover {
-  background: #7692FF;
+  background: #1D81D7;
   opacity: 1.0;
 }
 
@@ -618,7 +618,7 @@ section#footer {
             HIGHLIGHT LINK
  */
 #top-menu li.active a {
-  color: #7692FF;
+  color: #1D81D7;
 }
 
 
