@@ -146,6 +146,10 @@ section#footer {
   left: 0%;
   right: 0%;
 }
+.at-bottom h3 { 
+  padding: 0.5rem;
+  font-size: 2.2rem;
+}
 
 /**
             UTILITY SPACERS 
