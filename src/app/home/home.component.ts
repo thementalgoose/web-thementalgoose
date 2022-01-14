@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as particlejs from 'particlesjs';
-import { AngularFireAnalytics } from '@angular/fire/analytics';
+import { AngularFireAnalytics } from '@angular/fire/compat/analytics';
 import { environment } from 'src/environments/environment';
 
 declare function require(moduleName: string): any;

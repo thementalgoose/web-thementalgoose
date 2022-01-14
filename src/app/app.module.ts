@@ -10,8 +10,8 @@ import { TransmissionPrivacyPolicyComponent } from './transmission/dt-privacy-po
 import { HourGlassPrivacyPolicyComponent } from './hour-glass/privacy-policy/privacy-policy.component';
 import { FlashbackPrivacyPolicyComponent } from './flashback/privacy-policy/privacy-policy.component';
 import { LinksComponent } from './home/links/links.component';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
 import { environment } from 'src/environments/environment';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { FooterComponent } from './home/footer/footer.component';
