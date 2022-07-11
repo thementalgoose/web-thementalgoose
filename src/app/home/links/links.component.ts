@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { email, urlGithub, urlLinkedin, urlPlay } from 'src/app/constants';
+import { email, urlCV, urlGithub, urlLinkedin, urlPlay } from 'src/app/constants';
 import { ProjectItem } from 'src/app/data/project-item';
 
 @Component({
@@ -17,6 +17,8 @@ export class LinksComponent implements OnInit {
   public linkPlay = urlPlay;
 
   public email = email;
+
+  public linkCV = urlCV;
 
   constructor() { }
 
