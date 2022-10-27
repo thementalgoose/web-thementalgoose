@@ -2,6 +2,7 @@ baseURL = 'https://thementalgoose.com'
 languageCode = 'en-us'
 title = 'TheMentalGoose'
 theme = "hello-friend"
+googleAnalytics = "G-3WJHWB2X7T"
 
 [params]
   contentTypeName = "projects"
