@@ -1,7 +1,7 @@
 +++
 title = "Transmission"
 date = 2017-01-01
-draft = true
+draft = false
 description = "All in one driving revision aid"
 categories = ['Development']
 tags = ["Android"]

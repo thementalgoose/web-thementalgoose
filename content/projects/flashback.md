@@ -1,7 +1,7 @@
 +++
 title = "Flashback"
 date = 2021-04-01
-draft = true
+draft = false
 description = "Formula 1 statistics and news"
 categories = ['Development']
 tags = ["Android"]
