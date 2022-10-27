@@ -1,0 +1,54 @@
+baseURL = 'https://thementalgoose.com'
+languageCode = 'en-us'
+title = 'TheMentalGoose'
+theme = "hello-friend"
+googleAnalytics = "G-3WJHWB2X7T"
+
+[params]
+  contentTypeName = "projects"
+  defaultTheme = "dark" # "light" or "dark"
+  showMenuItems = 2
+  showReadingTime = false
+
+  linkGithub = "https://github.com/thementalgoose"
+  linkLinkedin = "https://www.linkedin.com/in/jordanspencerfisher/"
+  linkGooglePlay = "https://play.google.com/store/apps/dev?id=7104925501019224102"
+  linkEmail = "mailto:thementalgoose@gmail.com"
+  linkCV = "https://thementalgoose.com/JordanFisher.pdf"
+  
+[languages]
+  [languages.en]
+    title = "TheMentalGoose"
+    subtitle = "Android App Developer"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "See other projects"
+    newerPosts = "Newer projects"
+    olderPosts = "Older projects"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    [languages.en.params.logo]
+      logoText = "thementalgoose"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects"
+      # [[languages.en.menu.main]]
+      #   identifier = "about"
+      #   name = "About"
+      #   url = "/about"
+
+[markup.goldmark.renderer]
+unsafe= true

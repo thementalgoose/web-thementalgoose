@@ -1,0 +1,18 @@
+.links { 
+    display: flex;
+    justify-content: space-between;
+    max-width: 180px;
+
+    .icon { 
+        width: 25px;
+        height: 25px;
+        color: --color;
+    }
+}
+
+
+.google-play { 
+    img { 
+        width: 200px;
+    }
+}
