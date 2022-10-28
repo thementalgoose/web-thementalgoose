@@ -37,6 +37,9 @@ testem.log
 
 public/
 
+resources/
+.hugo_build.lock
+
 # System Files
 .DS_Store
 Thumbs.db
