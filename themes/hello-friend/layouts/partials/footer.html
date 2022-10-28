@@ -1,23 +1,23 @@
 <footer class="footer">
+  {{ if $.Site.Params.Squiggle }}
   <div class="footer__inner">
-    {{ if $.Site.Copyright }}
-      <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>
-      {{ else }}
-      <!-- {{ partial "logo.html" . }} -->
-      <!-- <div class="copyright">
-        <span
-          >© {{ now.Year }} Powered by
-          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
-        >
-        <span
-          >Theme created by
-          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
-        >
-      </div> -->
-    {{ end }}
+    <div class="squiggle-container">
+    </div>
   </div>
+  {{ end }}
+  {{ if $.Site.Copyright }}
+  <div class="footer__inner">
+    <div class="copyright">
+      <p class="small">Copyright © {{ now.Year }} {{ $.Site.Copyright }}</p>
+    </div>
+  </div>
+  {{ end }}
 </footer>
 
+{{ if $.Site.Params.Snow }}
+  {{ $snow := resources.Get "js/pureSnow.js" | js.Build }}
+  <script type="text/javascript">toggleSnow();</script>
+{{ end }}
 {{ $menu := resources.Get "js/menu.js" | js.Build }}
 {{ $prism := resources.Get "js/prism.js" | js.Build }}
 {{ $theme := resources.Get "js/theme.js" | js.Build }}
