@@ -7,6 +7,7 @@ body.light-theme, :root {
   --color: #222;
   --color-secondary: #999;
   --border-color: #dcdcdc;
+  --primary: #4B9DD8;
   /* variables for js, must be the same as these in @custom-media queries */
   --phoneWidth: (max-width: 684px);
   --tabletWidth: (max-width: 900px); }
@@ -18,7 +19,8 @@ body.dark-theme {
   --header: #252627;
   --color: #a9a9b3;
   --color-secondary: #73747b;
-  --border-color: #4a4b50; }
+  --border-color: #4a4b50;
+  --primary: #51ddfe; }
 
 @media (prefers-color-scheme: light) {
   body:not(.dark-theme) {
@@ -28,7 +30,8 @@ body.dark-theme {
     --header: #fafafa;
     --color: #222;
     --color-secondary: #999;
-    --border-color: #dcdcdc; } }
+    --border-color: #dcdcdc;
+    --primary: #4B9DD8; } }
 
 @media (prefers-color-scheme: dark) {
   body:not(.light-theme) {
@@ -38,7 +41,8 @@ body.dark-theme {
     --header: #252627;
     --color: #a9a9b3;
     --color-secondary: #73747b;
-    --border-color: #4a4b50; } }
+    --border-color: #4a4b50;
+    --primary: #51ddfe; } }
 
 /* MEDIA QUERIES */
 /* HOW TO USE */
@@ -239,7 +243,7 @@ a.read-more:active {
     display: inline-block;
     width: 10px;
     height: 1rem;
-    background: #51ddfe;
+    background: var(--primary);
     margin-left: 5px;
     border-radius: 1px;
     animation: cursor 1s infinite; }
@@ -690,6 +694,8 @@ h4:hover a {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
+    .button a:hover {
+      color: var(--color); }
   .button__text {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1085,13 +1091,21 @@ div.code-toolbar > .toolbar span:focus {
     margin: 0; }
 
 .links {
-  display: flex;
-  justify-content: space-between;
-  max-width: 180px; }
+  display: flex; }
+  .links a:hover {
+    color: var(--color); }
   .links .icon {
-    width: 25px;
-    height: 25px;
-    color: --color; }
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    fill: var(--color); }
+    .links .icon:hover {
+      background-color: var(--background-secondary);
+      border-radius: 4px;
+      color: var(--color); }
 
 .google-play img {
   width: 200px; }
+
+a:hover {
+  color: var(--primary); }

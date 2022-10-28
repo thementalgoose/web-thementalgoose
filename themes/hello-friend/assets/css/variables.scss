@@ -6,6 +6,7 @@ body.light-theme, :root {
   --color: #222;
   --color-secondary: #999;
   --border-color: #dcdcdc;
+  --primary: #4B9DD8;
 
   /* variables for js, must be the same as these in @custom-media queries */
   --phoneWidth: (max-width: 684px);
@@ -20,6 +21,7 @@ body.dark-theme {
   --color: #a9a9b3;
   --color-secondary: #73747b;
   --border-color: #4a4b50;
+  --primary: #51ddfe;
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,6 +33,7 @@ body.dark-theme {
     --color: #222;
     --color-secondary: #999;
     --border-color: #dcdcdc;
+    --primary: #4B9DD8;
   }
 }
 
@@ -43,6 +46,7 @@ body.dark-theme {
     --color: #a9a9b3;
     --color-secondary: #73747b;
     --border-color: #4a4b50;
+    --primary: #51ddfe;
   }
 }
 

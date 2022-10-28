@@ -67,6 +67,10 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+
+    &:hover { 
+      color: var(--color);
+    }
   }
 
   &__text {
