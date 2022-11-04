@@ -245,6 +245,21 @@ ol ol {
   }
 }
 
+.homepage { 
+  display: flex;
+  justify-content: end;
+
+  &__content { 
+    flex: auto;
+    padding-right: 10px;
+  }
+
+  .avatar { 
+    width: 250px;
+    height: 250px;
+  }
+}
+
 hr {
   width: 100%;
   border: none;
