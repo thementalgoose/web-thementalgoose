@@ -255,8 +255,20 @@ ol ol {
   }
 
   .avatar { 
-    width: 250px;
-    height: 250px;
+    background: url('/duck-dance.gif');
+    background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-style: solid;
+    border-radius: 125px;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 210px;
+    margin-right: 30px;
   }
 }
 
