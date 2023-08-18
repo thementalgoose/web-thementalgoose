@@ -11,8 +11,30 @@ tags = ["Android"]
 
 Flashback provides race results and statistics from every race in the history of Formula 1 and the latest Formula 1 news from around the web!
 
-| ![](https://play-lh.googleusercontent.com/3MEBcjOJg5LFPCK91q5pYCvpACwrL0K-xffNA34C2T7mM8ITLCouyt9JAvSPNNCdlXY=w5120-h2880-rw) | ![](https://play-lh.googleusercontent.com/r9Hr5ifZ1htR5haaxMNvpUsjx8vk1nIAQdzTV09KYwjfWrBK3e5DsfifJr_I1nvXCw=w5120-h2880-rw) | 
-|---|---|
+
+| ![](/img/projects/flashback/phone/screenshot1.png) | ![](/img/projects/flashback/phone/screenshot2.png) | ![](/img/projects/flashback/phone/screenshot3.png) | ![](/img/projects/flashback/phone/screenshot4.png) | 
+|---|---|---|---|
+
+<details>
+
+<summary>Phone screenshots</summary>
+
+| ![](/img/projects/flashback/phone/screenshot1.png) | ![](/img/projects/flashback/phone/screenshot2.png) | ![](/img/projects/flashback/phone/screenshot3.png) | ![](/img/projects/flashback/phone/screenshot4.png) | 
+|---|---|---|---|
+| ![](/img/projects/flashback/phone/screenshot5.png) | ![](/img/projects/flashback/phone/screenshot6.png) | ![](/img/projects/flashback/phone/screenshot7.png) | ![](/img/projects/flashback/phone/screenshot8.png) | 
+
+</details>
+
+<details>
+
+<summary>Tablet screenshots</summary>
+
+| ![](/img/projects/flashback/tablet/screenshot1.png) | ![](/img/projects/flashback/tablet/screenshot2.png) | ![](/img/projects/flashback/tablet/screenshot3.png) | ![](/img/projects/flashback/tablet/screenshot4.png) | 
+|---|---|---|---|
+| ![](/img/projects/flashback/tablet/screenshot5.png) | ![](/img/projects/flashback/tablet/screenshot6.png) | ![](/img/projects/flashback/tablet/screenshot7.png) | ![](/img/projects/flashback/tablet/screenshot8.png) | 
+
+</details>
+
 
 Flashback features include:
 
@@ -28,6 +50,7 @@ Flashback features include:
 - Constructor history and overview
 - Races held at a given track
 - In app section for upcoming events in Formula 1
+- Weather for the next upcoming race up to 14 days in advance
 - Notifications support for races and qualifying sessions
 
 We also have an RSS hub where you can configure RSS feeds for Formula 1 news!
