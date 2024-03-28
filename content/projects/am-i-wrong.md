@@ -21,5 +21,3 @@ It allows you to anonymously ask for opinions and crittercisms on the ambiguous 
 
 - [Jonathon Alford](https://uk.linkedin.com/in/jonoalford)
 - [Sebastian Ghetu](https://ghetu.net)
-
-<a class="google-play" href='https://play.google.com/store/apps/details?id=studio.roboto.hack24'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
