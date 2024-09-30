@@ -1,15 +1,30 @@
 <div class="links">
-    <a href="{{ $.Site.Params.LinkGithub }}">{{ partial "icon-github.html" . }}</a>
+    <a href="{{ $.Site.Params.LinkGithub }}" class="tooltip">
+        {{ partial "icon-github.html" . }}
+        <span class="tooltiptext">Github</span>
+    </a>
     &nbsp;
     &nbsp;
-    <a href="{{ $.Site.Params.LinkCV }}">{{ partial "icon-cv.html" . }}</a>
+    <a href="{{ $.Site.Params.LinkCV }}" class="tooltip">
+        {{ partial "icon-cv.html" . }}
+        <span class="tooltiptext">CV</span>
+    </a>
     &nbsp;
     &nbsp;
-    <a href="{{ $.Site.Params.LinkLinkedIn }}">{{ partial "icon-linkedin.html" . }}</a>
+    <a href="{{ $.Site.Params.LinkLinkedIn }}" class="tooltip">
+        {{ partial "icon-linkedin.html" . }}
+        <span class="tooltiptext">LinkedIn</span>
+    </a>
     &nbsp;
     &nbsp;
-    <a href="{{ $.Site.Params.LinkEmail }}">{{ partial "icon-email.html" . }}</a>
+    <a href="{{ $.Site.Params.LinkEmail }}" class="tooltip">
+        {{ partial "icon-email.html" . }}
+        <span class="tooltiptext">Email</span>
+    </a>
     &nbsp;
     &nbsp;
-    <a href="{{ $.Site.Params.LinkGooglePlay }}">{{ partial "icon-googleplay.html" . }}</a>
+    <a href="{{ $.Site.Params.LinkGooglePlay }}" class="tooltip">
+        {{ partial "icon-googleplay.html" . }}
+        <span class="tooltiptext">Google Play</span>
+    </a>
 </div>
