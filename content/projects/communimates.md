@@ -4,7 +4,7 @@ date = 2018-03-10
 draft = false
 description = "Use AI to help or be helped"
 categories = ['Development']
-tags = ["Android"]
+tags = ["android"]
 +++
 
 ## AI based chatrooms

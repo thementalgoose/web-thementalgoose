@@ -4,7 +4,7 @@ date = 2013-08-13
 draft = false
 description = "Website for a driving school"
 categories = ['Development']
-tags = ["Web"]
+tags = ["web"]
 +++
 
 ## Driving lesson website

@@ -4,7 +4,7 @@ date = 2017-01-01
 draft = false
 description = "All in one driving revision aid"
 categories = ['Development']
-tags = ["Android"]
+tags = ["android"]
 +++
 
 ## Driving Revision Tool

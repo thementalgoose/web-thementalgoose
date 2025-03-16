@@ -4,7 +4,7 @@ date = 2020-06-01
 draft = false
 description = "Countdown app for tracking what should be"
 categories = ['Development']
-tags = ["Android"]
+tags = ["android"]
 +++
 
 ## Countdown app

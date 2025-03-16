@@ -4,7 +4,7 @@ date = 2012-03-10
 draft = false
 description = "Attempt to install apps made by the CyanogenMod team on any AOSP or android-based ROMs as system or user facing apps"
 categories = ['Development']
-tags = ["Android"]
+tags = ["android"]
 +++
 
 ## Install apps on any ROM

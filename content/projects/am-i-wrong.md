@@ -4,7 +4,7 @@ date = 2017-03-19
 draft = false
 description = "A place to ask if what you did was morally acceptable"
 categories = ['Development']
-tags = ["Android"]
+tags = ["android"]
 +++
 
 ## Moral rightousness
