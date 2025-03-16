@@ -1,6 +1,6 @@
 +++
 title = "Flashback"
-date = 2021-04-01
+date = 2023-01-01
 draft = false
 description = "Formula 1 statistics and news"
 categories = ['Development']
@@ -10,7 +10,6 @@ tags = ["Android"]
 ## Formula 1 statistics
 
 Flashback provides race results and statistics from every race in the history of Formula 1 and the latest Formula 1 news from around the web!
-
 
 | ![](/img/projects/flashback/phone/screenshot1.png) | ![](/img/projects/flashback/phone/screenshot2.png) | ![](/img/projects/flashback/phone/screenshot3.png) | ![](/img/projects/flashback/phone/screenshot4.png) | 
 |---|---|---|---|
