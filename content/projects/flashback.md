@@ -4,7 +4,7 @@ date = 2023-01-01
 draft = false
 description = "Formula 1 statistics and news"
 categories = ['Development']
-tags = ["Android"]
+tags = ["Android", "iOS"]
 +++
 
 ## Formula 1 statistics
@@ -65,4 +65,5 @@ Flashback includes quick links for Formula 1 RSS feeds from autosport.com, crash
 
 Flashback is also not affiliated in any way with any of the Formula One group of companies: FORMULA 1, FIA FORMULA ONE and related trademarks of Formula One Licensing BV
 
-<a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.flashback'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.flashback'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a> 
+<a class="apple-appstore" href="https://apps.apple.com/us/app/flashback-f1-results/id6748612648"><img alt="Get it on the App Store" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred_2x.png"></a>
