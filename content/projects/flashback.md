@@ -67,5 +67,6 @@ Flashback includes quick links for Formula 1 RSS feeds from autosport.com, crash
 
 Flashback is also not affiliated in any way with any of the Formula One group of companies: FORMULA 1, FIA FORMULA ONE and related trademarks of Formula One Licensing BV
 
-<a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.flashback'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a> 
-<a class="apple-appstore" href="https://apps.apple.com/us/app/flashback-f1-results/id6748612648"><img alt="Get it on the App Store" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred_2x.png"></a>
+<a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.flashback'><img width="200" alt='Get it on Google Play' src='/img/google-play.png'/></a> 
+
+<a class="apple-appstore" href="https://apps.apple.com/us/app/flashback-f1-results/id6748612648"><img width="200" alt="Get it on the App Store" src='/img/app-store.png'></a>
