@@ -9,7 +9,7 @@ tags = ["web", "api"]
 
 ## Flashback API
 
-The API behind the <a href="/projects/flashback">Flashback android app</a>. Check out the API <a href="https://flashback.pages.dev">here</a>
+The API behind the <a href="/projects/flashback">Flashback Android + iOS app</a>. Check out the API <a href="https://flashback.pages.dev">here</a>
 
 
 ### Schema
