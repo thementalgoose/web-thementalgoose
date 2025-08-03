@@ -34,6 +34,8 @@ Flashback provides race results and statistics from every race in the history of
 
 </details>
 
+View the project on [github](https://github.com/thementalgoose/kmp-flashback)
+
 Flashback provides race results and statistics from every race in the history of Formula 1 and the latest Formula 1 news from around the web!
 
 Flashback features include:
