@@ -9,6 +9,8 @@ tags = ["android"]
 
 ## Countdown app
 
+<a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.hourglass'><img width="200" alt='Get it on Google Play' src='/img/google-play.png'/></a> 
+
 HourGlass is a small app to be able to:
 
 - countdown to an event
@@ -27,5 +29,3 @@ You can use this to track how much you should have saved towards a holiday, or h
 |---|---|
 
 </details>
-
-<a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.hourglass'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>

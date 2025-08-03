@@ -9,6 +9,10 @@ tags = ["Android", "iOS"]
 
 ## Formula 1 statistics
 
+<a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.flashback'><img width="200" alt='Get it on Google Play' src='/img/google-play.png'/></a> 
+
+<a class="apple-appstore" href="https://apps.apple.com/us/app/flashback-f1-results/id6748612648"><img width="200" alt="Get it on the App Store" src='/img/app-store.png'></a>
+
 Flashback provides race results and statistics from every race in the history of Formula 1 and the latest Formula 1 news from around the web!
 
 | ![](/img/projects/flashback/phone/screenshot1.png) | ![](/img/projects/flashback/phone/screenshot2.png) | ![](/img/projects/flashback/phone/screenshot3.png) | ![](/img/projects/flashback/phone/screenshot4.png) | 
@@ -66,7 +70,3 @@ Data is provided by the Flashback team. Historical data for 2022 and before was 
 Flashback includes quick links for Formula 1 RSS feeds from autosport.com, crash.net, motorsport.com, pitpass.com, f1-fansite.com, bbc.co.uk, theguardian.com, wtf1.com, grandprix247.com, f1i.com, and f1technical.net, but is not affiliated with them in any way
 
 Flashback is also not affiliated in any way with any of the Formula One group of companies: FORMULA 1, FIA FORMULA ONE and related trademarks of Formula One Licensing BV
-
-<a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.flashback'><img width="200" alt='Get it on Google Play' src='/img/google-play.png'/></a> 
-
-<a class="apple-appstore" href="https://apps.apple.com/us/app/flashback-f1-results/id6748612648"><img width="200" alt="Get it on the App Store" src='/img/app-store.png'></a>
