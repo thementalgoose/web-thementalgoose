@@ -13,6 +13,8 @@ tags = ["Android", "iOS"]
 
 <a class="apple-appstore" href="https://apps.apple.com/us/app/flashback-f1-results/id6748612648"><img width="200" alt="Get it on the App Store" src='/img/app-store.png'></a>
 
+Check out the <a href="/projects/flashback-api">API behind the app</a> here.
+
 Flashback provides race results and statistics from every race in the history of Formula 1 and the latest Formula 1 news from around the web!
 
 | ![](/img/projects/flashback/phone/screenshot1.png) | ![](/img/projects/flashback/phone/screenshot2.png) | ![](/img/projects/flashback/phone/screenshot3.png) | ![](/img/projects/flashback/phone/screenshot4.png) | 
