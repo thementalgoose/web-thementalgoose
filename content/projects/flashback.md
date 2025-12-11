@@ -4,7 +4,7 @@ date = 2023-01-01
 draft = false
 description = "Formula 1 statistics and news"
 categories = ['Development']
-tags = ["Android", "iOS", "Pebble"]
+tags = ["android", "iOS", "pebble"]
 +++
 
 ## Formula 1 statistics
