@@ -19,14 +19,13 @@
 <link rel="canonical" href="{{ .Permalink }}" />
 
 {{ template "_internal/google_analytics.html" . }}
-{{ template "_internal/google_analytics_async.html" . }}
 
 <!-- head custom -->
 {{- partial "prepended_head.html" . }}
 
 <!-- Theme CSS -->
 {{ $res := resources.Get "css/style.scss" }}
-{{ $style := $res | resources.ToCSS }}
+{{ $style := $res | css.Sass }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 <!-- Custom CSS to override theme properties (/static/style.css) -->
 <link rel="stylesheet" href="{{ "style.css" | absURL }}" />
