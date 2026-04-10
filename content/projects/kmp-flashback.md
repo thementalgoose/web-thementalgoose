@@ -4,7 +4,7 @@ date = 2023-01-01
 draft = false
 description = "Formula 1 statistics and news"
 categories = ['Development']
-tags = ["android", "iOS", "pebble"]
+tags = ["android", "iOS", "flashback"]
 +++
 
 ## Formula 1 statistics
@@ -12,10 +12,6 @@ tags = ["android", "iOS", "pebble"]
 <a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.flashback'><img width="200" alt='Get it on Google Play' src='/img/google-play.png'/></a> 
 
 <a class="apple-appstore" href="https://apps.apple.com/us/app/flashback-f1-results/id6748612648"><img width="200" alt="Get it on the App Store" src='/img/app-store.png'></a>
-
-<a href="https://flashback.pages.dev"><img src="https://img.shields.io/static/v1?label=API&message=%20&logo=cloudflare&logoColor=white&color=orange&style=flat"/></a>
-
-<a href="https://apps.rebble.io/en_US/application/6929da3470731e00092debea"><img src="https://img.shields.io/static/v1?label=Rebble%20App%20Listing&message=%20&logoColor=white&color=833FD6&style=flat&logo=c"/></a>
 
 Check out the <a href="/projects/flashback-api">API behind the app</a> here.
 
@@ -28,9 +24,9 @@ Flashback provides race results and statistics from every race in the history of
 
 <summary>Phone screenshots</summary>
 
-| ![](/img/projects/flashback/phone/screenshot1.png) | ![](/img/projects/flashback/phone/screenshot2.png) | ![](/img/projects/flashback/phone/screenshot3.png) | ![](/img/projects/flashback/phone/screenshot4.png) | 
+| ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/phone/screenshot1.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/phone/screenshot2.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/phone/screenshot3.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/phone/screenshot5.png) | 
 |---|---|---|---|
-| ![](/img/projects/flashback/phone/screenshot5.png) | ![](/img/projects/flashback/phone/screenshot6.png) | ![](/img/projects/flashback/phone/screenshot7.png) | ![](/img/projects/flashback/phone/screenshot8.png) | 
+| ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/phone/screenshot5.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/phone/screenshot6.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/phone/screenshot7.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/phone/screenshot8.png) | 
 
 </details>
 
@@ -38,9 +34,9 @@ Flashback provides race results and statistics from every race in the history of
 
 <summary>Tablet screenshots</summary>
 
-| ![](/img/projects/flashback/tablet/screenshot1.png) | ![](/img/projects/flashback/tablet/screenshot2.png) | ![](/img/projects/flashback/tablet/screenshot3.png) | ![](/img/projects/flashback/tablet/screenshot4.png) | 
+| ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/tablet_7/screenshot1.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/tablet_7/screenshot2.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/tablet_7/screenshot3.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/tablet_7/screenshot4.png) | 
 |---|---|---|---|
-| ![](/img/projects/flashback/tablet/screenshot5.png) | ![](/img/projects/flashback/tablet/screenshot6.png) | ![](/img/projects/flashback/tablet/screenshot7.png) | ![](/img/projects/flashback/tablet/screenshot8.png) | 
+| ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/tablet_10/screenshot1.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/tablet_10/screenshot2.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/tablet_10/screenshot3.png) | ![](https://raw.githubusercontent.com/thementalgoose/kmp-flashback/refs/heads/main/resources/android/screenshots/tablet_10/screenshot4.png) | 
 
 </details>
 
