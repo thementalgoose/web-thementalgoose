@@ -11,7 +11,6 @@ tags = ["web", "api", "flashback"]
 
 The API behind the <a href="/projects/kmp-flashback">Flashback Android + iOS app</a>. Check out the API <a href="https://flashback.pages.dev">here</a>
 
-
 ### Schema
 
 - /news.json

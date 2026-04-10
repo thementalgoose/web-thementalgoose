@@ -4,16 +4,18 @@ date = 2023-01-01
 draft = false
 description = "Formula 1 statistics and news"
 categories = ['Development']
-tags = ["android", "iOS", "flashback"]
+tags = ["android", "iOS", "kmp", "flashback"]
 +++
 
 ## Formula 1 statistics
+
+[![](https://img.shields.io/badge/Github-kmp--flashback-blue?logo=github&style=for-the-badge)](https://github.com/thementalgoose/kmp-flashback)
 
 <a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.flashback'><img width="200" alt='Get it on Google Play' src='/img/google-play.png'/></a> 
 
 <a class="apple-appstore" href="https://apps.apple.com/us/app/flashback-f1-results/id6748612648"><img width="200" alt="Get it on the App Store" src='/img/app-store.png'></a>
 
-Check out the <a href="/projects/flashback-api">API behind the app</a> here.
+Check out the <a href="/projects/flashback-api">API behind the app</a> here, or the <a href="/projects/pebble-flashback">Pebble watchapp</a> here.
 
 Flashback provides race results and statistics from every race in the history of Formula 1 and the latest Formula 1 news from around the web!
 
