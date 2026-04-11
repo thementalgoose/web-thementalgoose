@@ -1,5 +1,5 @@
 +++
-title = "J21 Driving School"
+title = "j21drivingschool.co.uk"
 date = 2013-08-13
 draft = false
 description = "Website for a driving school"

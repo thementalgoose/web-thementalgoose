@@ -9,6 +9,8 @@ tags = ["android"]
 
 ## Countdown app
 
+[![](https://img.shields.io/badge/Github-android--hour--glass-blue?logo=github)](https://github.com/thementalgoose/android-hour-glass)
+
 <a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.hourglass'><img width="200" alt='Get it on Google Play' src='/img/google-play.png'/></a> 
 
 HourGlass is a small app to be able to:
@@ -18,14 +20,14 @@ HourGlass is a small app to be able to:
 
 You can use this to track how much you should have saved towards a holiday, or how many miles a rental car should be on when you drop it off if you have a quota
 
-| ![](/img/projects/hourglass/phone/hourglass-1.png) | ![](/img/projects/hourglass/phone/hourglass-2.png) | ![](/img/projects/hourglass/phone/hourglass-3.png) | ![](/img/projects/hourglass/phone/hourglass-4.png) | 
+| ![](https://raw.githubusercontent.com/thementalgoose/android-hour-glass/refs/heads/main/res/screenshots/raw/phone/hourglass-1.png) | ![](https://raw.githubusercontent.com/thementalgoose/android-hour-glass/refs/heads/main/res/screenshots/raw/phone/hourglass-2.png) | ![](https://raw.githubusercontent.com/thementalgoose/android-hour-glass/refs/heads/main/res/screenshots/raw/phone/hourglass-3.png) | ![](https://raw.githubusercontent.com/thementalgoose/android-hour-glass/refs/heads/main/res/screenshots/raw/phone/hourglass-4.png) | 
 |---|---|---|---|
 
 <details>
 
 <summary>Tablet screenshots</summary>
 
-| ![](/img/projects/hourglass/tablet/hourglass-1.png) | ![](/img/projects/hourglass/tablet/hourglass-2.png) |
+| ![](https://raw.githubusercontent.com/thementalgoose/android-hour-glass/refs/heads/main/res/screenshots/raw/tablet/hourglass-1.png) | ![](https://raw.githubusercontent.com/thementalgoose/android-hour-glass/refs/heads/main/res/screenshots/raw/tablet/hourglass-1.png) |
 |---|---|
 
 </details>

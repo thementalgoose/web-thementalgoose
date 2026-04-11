@@ -4,13 +4,12 @@ date = 2022-01-01
 draft = false
 description = "API for the flashback application"
 categories = ['Development']
-tags = ["web", "api"]
+tags = ["web", "api", "flashback"]
 +++
 
 ## Flashback API
 
-The API behind the <a href="/projects/android-flashback">Flashback Android + iOS app</a>. Check out the API <a href="https://flashback.pages.dev">here</a>
-
+The API behind the <a href="/projects/kmp-flashback">Flashback Android + iOS app</a>. Check out the API <a href="https://flashback.pages.dev">here</a>
 
 ### Schema
 
