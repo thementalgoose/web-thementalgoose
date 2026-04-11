@@ -9,9 +9,9 @@ tags = ["pebble"]
 
 ## Portal Testchamber
 
-[![](https://img.shields.io/badge/Github-pebble--testchamber-blue?logo=github&style=for-the-badge)](https://github.com/thementalgoose/pebble-testchamber)
+[![](https://img.shields.io/badge/Github-pebble--testchamber-blue?logo=github)](https://github.com/thementalgoose/pebble-testchamber)
 
-[![](https://img.shields.io/badge/Repebble_App_Store-Portal_TestChamber-blue?color=orange&style=for-the-badge)](https://apps.repebble.com/4e59818904134ba485cd636e)
+[![](https://img.shields.io/badge/Repebble_App_Store-Portal_TestChamber-blue?color=orange)](https://apps.repebble.com/4e59818904134ba485cd636e)
 
 A small pebble watchface inspired by the test chamber start signs within the portal game 
 

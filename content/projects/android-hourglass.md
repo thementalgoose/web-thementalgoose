@@ -9,7 +9,7 @@ tags = ["android"]
 
 ## Countdown app
 
-[![](https://img.shields.io/badge/Github-android--hour--glass-blue?logo=github&style=for-the-badge)](https://github.com/thementalgoose/android-hour-glass)
+[![](https://img.shields.io/badge/Github-android--hour--glass-blue?logo=github)](https://github.com/thementalgoose/android-hour-glass)
 
 <a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.hourglass'><img width="200" alt='Get it on Google Play' src='/img/google-play.png'/></a> 
 

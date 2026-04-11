@@ -9,7 +9,7 @@ tags = ["android", "iOS", "kmp", "flashback"]
 
 ## Formula 1 statistics
 
-[![](https://img.shields.io/badge/Github-kmp--flashback-blue?logo=github&style=for-the-badge)](https://github.com/thementalgoose/kmp-flashback)
+[![](https://img.shields.io/badge/Github-kmp--flashback-blue?logo=github)](https://github.com/thementalgoose/kmp-flashback)
 
 <a class="google-play" href='https://play.google.com/store/apps/details?id=tmg.flashback'><img width="200" alt='Get it on Google Play' src='/img/google-play.png'/></a> 
 

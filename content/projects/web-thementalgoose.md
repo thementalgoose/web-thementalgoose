@@ -10,6 +10,6 @@ tags = ["web"]
 ## This website
 
 
-[![](https://img.shields.io/badge/Github-web--thementalgoose-blue?logo=github&style=for-the-badge)](https://github.com/thementalgoose/web-thementalgoose)
+[![](https://img.shields.io/badge/Github-web--thementalgoose-blue?logo=github)](https://github.com/thementalgoose/web-thementalgoose)
 
 A hugo website to showcase some stuff :)
