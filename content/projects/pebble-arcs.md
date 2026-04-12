@@ -11,7 +11,7 @@ tags = ["pebble"]
 
 [![](https://img.shields.io/badge/Github-pebble--arcs-blue?logo=github)](https://github.com/thementalgoose/pebble-arcs)
 
-[![](https://img.shields.io/badge/Repebble_App_Store-ARCs-blue?color=orange)]()
+[![](https://img.shields.io/badge/Repebble_App_Store-ARCs-blue?color=orange)](https://apps.repebble.com/40d48d07d398413fbe331dc3)
 
 A pebble watchface which has arcs in each corner to show various metrics
 
