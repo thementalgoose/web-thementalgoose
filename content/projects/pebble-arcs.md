@@ -20,6 +20,7 @@ A pebble watchface which has arcs in each corner to show various metrics
 - Supports configuring each indicator
 - Supports indicator colors on supported devices
 - Supports health metrics
+- Supports basic weather metrics
 
 | Pebble Round | OG Pebble<br/>Pebble Time<br/>Pebble 2<br/>Pebble 2 Duo | Pebble Time 2 | Pebble Round 2 |
 |---|---|---|---|
