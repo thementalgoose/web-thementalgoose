@@ -19,6 +19,7 @@ A small pebble watchface inspired by the test chamber start signs within the por
 - Supports embedded battery indicator
 - Supports configuring which panels to show on the watchface
 - Supports indicator for disconnection
+- Supports embedded sensor data inside panels
 
 | Pebble Round | OG Pebble<br/>Pebble Time<br/>Pebble 2<br/>Pebble 2 Duo | Pebble Time 2 | Pebble Round 2 |
 |---|---|---|---|
