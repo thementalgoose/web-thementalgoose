@@ -17,7 +17,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: sh scripts/hugo.sh --minify
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:

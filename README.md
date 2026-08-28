@@ -6,5 +6,5 @@ Current CV website for me, built in Hugo, hosted at [thementalgoose.com](https:/
 
 ### Run
 
-- `hugo server` to preview
-- `hugo --minify` to build
+- `sh scripts/hugo.sh server` to preview
+- `sh scripts/hugo.sh --minify` to build
