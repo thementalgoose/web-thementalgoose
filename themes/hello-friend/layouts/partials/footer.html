@@ -8,7 +8,7 @@
   {{ if $.Site.Copyright }}
   <div class="footer__inner">
     <div class="copyright">
-      <p class="small">Copyright © {{ now.Year }} {{ $.Site.Copyright }}</p>
+      <p class="small">Copyright © {{ now.Year }} {{ $.Site.Copyright }} {{ if getenv "HUGO_COMMIT_HASH"}}<br/><a href='{{ $.Site.Params.LinkGithubWebsite }}'>{{ getenv "HUGO_COMMIT_HASH" }}</a>{{ end }}</p>
     </div>
   </div>
   {{ end }}

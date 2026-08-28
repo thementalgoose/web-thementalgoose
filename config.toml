@@ -13,11 +13,12 @@ googleAnalytics = "G-3WJHWB2X7T"
   snow = false
 
   linkGithub = "https://github.com/thementalgoose"
+  linkGithubWebsite = "https://github.com/thementalgoose/web-thementalgoose"
   linkLinkedin = "https://www.linkedin.com/in/jordanspencerfisher/"
   linkGooglePlay = "https://play.google.com/store/apps/dev?id=7104925501019224102"
   linkAppleAppStore = "https://apps.apple.com/us/developer/jordan-fisher/id1826569298"
   linkEmail = "mailto:thementalgoose@gmail.com"
-  linkCV = "https://thementalgoose.com/JordanFisher.pdf"
+  linkCV = "https://thementalgoose.com/jordan-fisher-cv.pdf"
   linkRepebbleAppStore = "https://apps.repebble.com/apps/dev/jordan-fisher_5d482ff5d76b0f00018300f2"
   
 [languages]
