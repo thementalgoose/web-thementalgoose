@@ -9,9 +9,9 @@ tags = ["pebble"]
 
 ## Halo Swipe for Pebble
 
-[![](https://img.shields.io/badge/Github-pebble--flashback-blue?logo=github)](https://github.com/thementalgoose/pebble-flashback)
+[![](https://img.shields.io/badge/Github-pebble--halo--swipe-blue?logo=github)](https://github.com/thementalgoose/pebble-halo-swipe)
 
-[![](https://img.shields.io/badge/Repebble_App_Store-Flashback_F1_Results-blue?color=orange)](https://apps.repebble.com/6929da3470731e00092debea)
+[![](https://img.shields.io/badge/Repebble_App_Store-Halo_Swipe-blue?color=orange)](https://apps.repebble.com/dc3358b00af54f069f14d883)
 
 A small pebble watchface inspired by the Kickstarter OG Pebble Time 2 video
 
