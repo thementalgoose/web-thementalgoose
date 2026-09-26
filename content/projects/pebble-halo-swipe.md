@@ -1,5 +1,5 @@
 +++
-title = "Halo Swipe for Pebble"
+title = "Halo Swipe"
 date = 2026-09-26
 draft = false
 description = "Pebble watchface inspired by the kickstarter video for OG Pebble Time 2"
@@ -7,7 +7,7 @@ categories = ['Development']
 tags = ["pebble"]
 +++
 
-## Halo Swipe for Pebble
+## Halo Swipe
 
 [![](https://img.shields.io/badge/Github-pebble--halo--swipe-blue?logo=github)](https://github.com/thementalgoose/pebble-halo-swipe)
 
